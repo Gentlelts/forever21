@@ -1,9 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { LoginComponent }      from './login/login.component';
+import { LoginPage } from './pages/login/login.page';
+import { IndexPage } from './pages/index/index.page';
 
 const routes: Routes = [
-  { path: 'login', component: LoginComponent }
+    { path: '', component: IndexPage },
+    { path: 'login', component: LoginPage },
+
+    // otherwise redirect to home
+    { path: '**', redirectTo: '' }
   ];
 
 @NgModule({
