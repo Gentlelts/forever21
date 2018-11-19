@@ -15,6 +15,12 @@
 </header>
 <main class="">
   身体
+  <el-container [el-class]="'myClass'">text</el-container>
+  <el-button>默认按钮</el-button>
+  <el-button type="primary">主要按钮</el-button>
+  <el-button type="text">文字按钮</el-button>
+  <el-button>文字按钮</el-button>
+  <el-button [round]="true">文字按钮</el-button>
   <!--绑定的 model 与 label 值相同时就会被选中-->
   <el-radio class="radio" [(model)]="radio" label="备选1">备选项1</el-radio>
 
