@@ -1,2 +1,253 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~element-angular/theme/index.css";
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -ms-flex: 0 1 auto;
+}
+html,body{
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  background: #E4E7EC;;
+}
+[lang^="zh"] body {
+  font-family: Circular, PingFang-SC, "Hiragino Sans GB", 微软雅黑, "Microsoft YaHei", "Heiti SC", serif !important;
+}
+ul,ol,dl{
+  list-style: none;
+}
+.po-si-re{
+  position: relative;
+}
+.dis-flex{
+  display: flex;
+}
+.t-a-s{
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: flex-start;
+}
+.t-a-m {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.t-a-e {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: flex-end;
+}
+.o-v-p{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.t-a-c{
+  text-align: center;
+}
+.f-z-14{
+  font-size: 14px;
+}
+.f-z-16{
+  font-size: 16px;
+}
+.f-z-18{
+  font-size: 18px;
+}
+.f-z-20{
+  font-size: 20px;
+}
+.f-z-22{
+  font-size: 22px;
+}
+.f-z-24{
+  font-size: 24px;
+}
+.m-5{
+  margin: 5px;
+}
+.m-10{
+  margin: 10px;
+}
+.m-15{
+  margin: 15px;
+}
+.m-20{
+  margin: 20px;
+}
+.m-25{
+  margin: 25px;
+}
+.m-30{
+  margin: 30px;
+}
+.m-t-5{
+  margin-top: 5px;
+}
+.m-t-10{
+  margin-top: 10px;
+}
+.m-t-15{
+  margin-top: 15px;
+}
+.m-t-20{
+  margin-top: 20px;
+}
+.m-t-25{
+  margin-top: 25px;
+}
+.m-t-30{
+  margin-top: 30px;
+}
+.m-r-5{
+  margin-right: 5px;
+}
+.m-r-10{
+  margin-right: 10px;
+}
+.m-r-15{
+  margin-right: 15px;
+}
+.m-r-20{
+  margin-right: 20px;
+}
+.m-r-25{
+  margin-right: 25px;
+}
+.m-r-30{
+  margin-right: 30px;
+}
+.m-b-5{
+  margin-bottom: 5px;
+}
+.m-b-10{
+  margin-bottom: 10px;
+}
+.m-b-15{
+  margin-bottom: 15px;
+}
+.m-b-20{
+  margin-bottom: 20px;
+}
+.m-b-25{
+  margin-bottom: 25px;
+}
+.m-b-30{
+  margin-bottom: 30px;
+}
+.m-l-5{
+  margin-left: 5px;
+}
+.m-l-10{
+  margin-left: 10px;
+}
+.m-l-15{
+  margin-left: 15px;
+}
+.m-l-25{
+  margin-left: 25px;
+}
+.m-l-30{
+  margin-left: 30px;
+}
+.p-5{
+  padding: 5px;
+}
+.p-10{
+  padding: 10px;
+}
+.p-15{
+  padding: 15px;
+}
+.p-20{
+  padding: 20px;
+}
+.p-25{
+  padding: 25px;
+}
+.p-30{
+  padding: 30px;
+}
+.p-t-5{
+  padding-top: 5px;
+}
+.p-t-10{
+  padding-top: 10px;
+}
+.p-t-15{
+  padding-top: 15px;
+}
+.p-t-20{
+  padding-top: 20px;
+}
+.p-t-25{
+  padding-top: 25px;
+}
+.p-t-30{
+  padding-top: 30px;
+}
+.p-r-5{
+  padding-right: 5px;
+}
+.p-r-10{
+  padding-right: 10px;
+}
+.p-r-15{
+  padding-right: 15px;
+}
+.p-r-20{
+  padding-right: 20px;
+}
+.p-r-25{
+  padding-right: 25px;
+}
+.p-r-30{
+  padding-right: 30px;
+}
+.p-b-5{
+  padding-bottom: 5px;
+}
+.p-b-10{
+  padding-bottom: 10px;
+}
+.p-b-15{
+  padding-bottom: 15px;
+}
+.p-b-20{
+  padding-bottom: 20px;
+}
+.p-b-25{
+  padding-bottom: 25px;
+}
+.p-b-30{
+  padding-bottom: 30px;
+}
+.p-r-5{
+  padding-right: 5px;
+}
+.p-r-10{
+  padding-right: 10px;
+}
+.p-r-15{
+  padding-right: 15px;
+}
+.p-r-20{
+  padding-right: 20px;
+}
+.p-r-25{
+  padding-right: 25px;
+}
+.p-r-30{
+  padding-right: 30px;
+}

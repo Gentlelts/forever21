@@ -1,33 +1,20 @@
-<header class="dis-flex">
-  <div class=""></div>
-  <div class=""></div>
-  <div class="">
-    <nav>
-      <ul>
-        <li>关于我们</li>
-        <li></li>
-        <li>帮助</li>
-        <li>注册</li>
-        <li>登录</li>
-      </ul>
-    </nav>
-  </div>
-</header>
-<main class="">
-  身体
-  <el-container [el-class]="'myClass'">text</el-container>
-  <el-button>默认按钮</el-button>
-  <el-button type="primary">主要按钮</el-button>
-  <el-button type="text">文字按钮</el-button>
-  <el-button>文字按钮</el-button>
-  <el-button [round]="true">文字按钮</el-button>
-  <!--绑定的 model 与 label 值相同时就会被选中-->
-  <el-radio class="radio" [(model)]="radio" label="备选1">备选项1</el-radio>
+<app-header-banner></app-header-banner>
+<el-container>
+  <el-main class="">
+    身体text
+    <el-button (click)="ngOnInit11()">默认按钮</el-button>
+    <el-button type="primary">主要按钮</el-button>
+    <el-button type="text">文字按钮</el-button>
+    <el-button>文字按钮</el-button>
+    <el-button [round]="true">文字按钮</el-button>
+    <!--绑定的 model 与 label 值相同时就会被选中-->
+    <el-radio class="radio" [(model)]="radio" label="备选1">备选项1</el-radio>
 
-  <el-radio class="radio" [(model)]="radio" label="备选2">备选项2</el-radio>
+    <el-radio class="radio" [(model)]="radio" label="备选2">备选项2</el-radio>
 
-  <el-radio class="radio" [(model)]="radio" label="备选3">备选项3</el-radio>
-</main>
-<footer class="">
-  尾
-</footer>
+    <el-radio class="radio" [(model)]="radio" label="备选3">备选项3</el-radio>
+  </el-main>
+  <el-footer class="">
+    尾
+  </el-footer>
+</el-container>
