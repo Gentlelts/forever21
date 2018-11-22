@@ -10,7 +10,10 @@ html,body{
   margin: 0;
   padding: 0;
   font-size: 14px;
-  background: #E4E7EC;;
+  //background: #ececec;
+  line-height: 1.43;
+  color: #484848;
+  background-color: #fff
 }
 [lang^="zh"] body {
   font-family: Circular, PingFang-SC, "Hiragino Sans GB", 微软雅黑, "Microsoft YaHei", "Heiti SC", serif !important;
@@ -23,6 +26,9 @@ ul,ol,dl{
 }
 .dis-flex{
   display: flex;
+}
+.f-g-1{
+  flex-grow: 1;
 }
 .t-a-s{
   display: -ms-flexbox;
@@ -48,6 +54,9 @@ ul,ol,dl{
   -ms-flex-pack: center;
   justify-content: flex-end;
 }
+.justify-content-space-between{
+  justify-content: space-between;
+}
 .o-v-p{
   overflow: hidden;
   text-overflow: ellipsis;
@@ -55,6 +64,9 @@ ul,ol,dl{
 }
 .t-a-c{
   text-align: center;
+}
+.f-w-600{
+  font-weight: 600;
 }
 .f-z-14{
   font-size: 14px;
