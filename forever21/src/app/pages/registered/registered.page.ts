@@ -6,6 +6,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegisteredPage implements OnInit {
   constructor() { }
+  userName = '';
+  passWord = '';
   ngOnInit() {
+  }
+  Registered() {
+    let data = {
+      userName:this.userName,
+      passWord:this.passWord
+    };
+    console.log(data)
+    
   }
 }

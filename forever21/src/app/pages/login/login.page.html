@@ -1,3 +1,38 @@
-<p>
-  login works!
-</p>
+<div class="login-page-bg">
+  <app-header-banner></app-header-banner>
+  <div class="login-box-wrap t-a-m">
+    <div class="login-box-content t-a-m">
+      <div class="p-t-20 p-b-20 p-r-30 p-l-30 f-g-1">
+        <ul>
+          <li class="dis-flex">
+            <div class="">
+              <span></span>
+            </div>
+            <div class="p-t-20 p-b-20 f-g-1">
+              <div class="p-t-10 p-b-15">
+                <input class="w-100 login-page-userName color-fff" [(ngModel)]="userName" name=""
+                       type="text" title="UserName" placeholder="UserName">
+              </div>
+              <div class="p-t-15 p-b-10">
+                <input class="w-100 login-page-password color-fff"  [(ngModel)]="passWord" name=""
+                       type="password" title="PassWord" placeholder="PassWord">
+              </div>
+            </div>
+          </li>
+          <!--<li class="m-b-10 t-a-r">-->
+            <!--<span class="color-fff f-z-12">忘记密码?</span>-->
+          <!--</li>-->
+          <li class="justify-content-center dis-flex">
+            <div class="color-fff login-btn h-40 l-h-40 po-si-re" (click)="LoginIn()">
+              Log in
+              <!--<span class="color-fff f-z-12 forget-password">忘记密码?</span>-->
+            </div>
+          </li>
+          <li class="t-a-c m-t-10">
+            <span class="color-fff h-40 l-h-40 f-z-12">没有账号?立即 <a class="registered-link-btn" routerLink="/registered">注册</a></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
