@@ -1,0 +1,53 @@
+.login-page-bg{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  transition: opacity 1s ease 0s;
+  background: url("../../../public/images/bg2.png") no-repeat center center;
+  .login-box-wrap{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    .login-box-content{
+      width: 600px;
+      height: 350px;
+      //background: rgba(255, 255, 255, 0.2);
+      background: rgba(0, 0, 0, 0.3);
+      border-radius: 5px;
+      .login-page-userName,
+      .login-page-password,
+      .login-btn{
+        //background: rgba(255, 255, 255, 0.9);
+        background: rgba(0, 0, 0, 0.2);
+        opacity: .9;
+      }
+      .login-page-userName::-webkit-input-placeholder,
+      .login-page-password::-webkit-input-placeholder{
+        color:#fff;
+      }
+      .login-btn{
+        text-align: center;
+        width: 250px;
+        box-shadow: 0 0 5px #696969;
+        cursor: pointer;
+        .forget-password{
+          position: absolute;
+          right: -120px;
+          top: -27px;
+        }
+      }
+      .registered-link-btn:hover{
+        color:#F27860;
+      }
+    }
+  }
+}
