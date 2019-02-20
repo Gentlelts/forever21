@@ -2,6 +2,7 @@
 ._1pksixi {
   height: 480px;
   transition: opacity 0.5s ease 0s;
+  background: url("../../../public/images/stars.png") no-repeat center center;
 }
 ._ro4v2s {
   padding-left: 80px;
@@ -18,8 +19,5 @@
   bottom: 0px;
   background-size: cover;
   width: 100%;
-  background-repeat: no-repeat;
   transition: opacity 1s ease 0s;
-  background-position: center center;
-  background-image: url("../../../public/images/stars.png");
 }

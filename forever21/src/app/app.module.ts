@@ -19,7 +19,9 @@ import {HeaderBannerComponent} from './header-banner/header-banner.component';
 import {AboutPage} from './pages/about/about.page';
 import {StoryPage} from './pages/story/story.page';
 import {HelpPage} from './pages/help/help.page';
-import {RegisteredPage} from './pages/registered/registered.page'
+import {RegisteredPage} from './pages/registered/registered.page';
+import { HeaderBannerDarkComponent } from './header-banner-dark/header-banner-dark.component';
+import { FooterBannerComponent } from './footer-banner/footer-banner.component'
 
 @NgModule({
   declarations: [
@@ -32,6 +34,8 @@ import {RegisteredPage} from './pages/registered/registered.page'
     StoryPage,
     HelpPage,
     RegisteredPage,
+    HeaderBannerDarkComponent,
+    FooterBannerComponent,
   ],
   imports: [
     BrowserModule,

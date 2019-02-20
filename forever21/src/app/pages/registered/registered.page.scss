@@ -1,14 +1,16 @@
 .register-page-bg{
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  transition: opacity 1s ease 0s;
-  background: url("../../../public/images/bg1.png") no-repeat center center;
+  .register-page-bgi{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    transition: opacity 1s ease 0s;
+    background: url("../../../public/images/bg1.png") no-repeat center center;
+  }
   .registered-box-wrap{
     position: absolute;
     left: 0;
