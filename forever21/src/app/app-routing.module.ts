@@ -6,6 +6,7 @@ import { IndexPage } from './pages/index/index.page';
 import { AboutPage } from './pages/about/about.page';
 import { HelpPage } from './pages/help/help.page';
 import { StoryPage } from './pages/story/story.page';
+import { PersonalCenterPage } from './pages/personal-center/personal-center.page';
 
 const routes: Routes = [
     { path: '', component: IndexPage },
@@ -14,6 +15,7 @@ const routes: Routes = [
     { path: 'about', component: AboutPage },
     { path: 'help', component: HelpPage },
     { path: 'story', component: StoryPage },
+    { path: 'personalCenter', component: PersonalCenterPage },
 
     // otherwise redirect to home
     { path: '**', redirectTo: '' }
