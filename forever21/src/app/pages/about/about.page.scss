@@ -1,5 +1,41 @@
 .about-page{
-  .bg-banner{
-    width: 100%;
+  transition: opacity 1s ease 0s;
+  background: url("../../../public/images/footer-banner.png") repeat-y center center;
+  background-size: cover;
+  ul{
+    padding: 0;
+    margin: 0;
+  }
+  .about-page-bgi{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+    background-size: cover;
+  }
+  .about-page-content{
+    position: relative;
+    .about-page-content-bg{
+      width: 1024px;
+      margin: 0 auto;
+      .team-avatar{
+        width: 120px;
+        height: 150px;
+        border-radius: 5px;
+      }
+      .team-avatar-1{
+        transition: opacity 1s ease 0s;
+        background: url("../../../public/images/team-avatar-1.png") no-repeat center center;
+        background-size: cover;
+      }
+      .forever-21-intro{
+        text-indent: 2rem;
+        line-height: 2;
+        letter-spacing: 1px;
+      }
+    }
+
   }
 }
