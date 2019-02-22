@@ -1,4 +1,8 @@
 .personal-center{
+  ul{
+    margin: 0;
+    padding: 0;
+  }
   background: #f6f6f6;
   .personal-center-cover{
     width: 100%;
@@ -12,7 +16,7 @@
     z-index: 1;
     position: relative;
     .personal-info{
-
+      margin-top: -50px;
       .user-name{
         margin-top: 10px;
         text-align: center;
@@ -22,6 +26,15 @@
         height: 40px;
         line-height: 40px;
       }
+    }
+  }
+  .personal-center-content{
+    width: 1024px;
+    margin: 0 auto;
+    .personal-center-title{
+      height: 72px;
+      line-height: 72px;
+      font-size: 16px;
     }
   }
 }
