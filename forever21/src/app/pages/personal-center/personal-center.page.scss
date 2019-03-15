@@ -36,5 +36,18 @@
       line-height: 72px;
       font-size: 16px;
     }
+    .qv-icon-box{
+      width: 165px;
+      height: 154px;
+      display: block;
+      margin: 30px auto 30px;
+      background: url(../../../public/images/user-sprite.png) 0 -419px no-repeat;
+    }
+    .qv-alert-text{
+      font-size: 14px;
+      color: rgba(96,98,102,.65);
+      text-align: center;
+      margin-bottom: 30px;
+    }
   }
 }
