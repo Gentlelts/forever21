@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {HttpClient, HttpHeaders} from "@angular/common/http";
 import axios from 'axios';
 import {environment} from '../../../environments/environment';
+declare var JSEncrypt:any;
 
 @Component({
   templateUrl: './registered.page.html',
@@ -17,54 +18,44 @@ export class RegisteredPage implements OnInit {
   userName = '';
   passWord = '';
   
+  //注册
   Registered() {
     let data = {
-      userName: this.userName,
-      passWord: this.passWord
+      UserName: this.userName,
+      PassWord: this.passWord
     };
-    // axios.headers = {
-    //   'Content-Type': 'application/x-www-form-urlencoded ' //自定义headers
-    // };
-    console.log(data);
-    console.log(this.httpUrl);
-    // axios.post(this.httpUrl + '/loginRegister/register', data)
-    //   .then(function (response) {
-    //     console.log(response);
-    //   })
-    //   .catch(function (error) {
-    //     console.log(error);
-    //   });
-    
-    
-    // axios({
-    //   headers : {
-    //     'Content-Type': 'application/x-www-form-urlencoded ' //自定义headers
-    //   },
-    //   method: 'post',
-    //   url: '/loginRegister/register',
-    //   data: data
-    // });
-  
-  
     axios({
-      headers : {
-        'Content-Type': 'application/x-www-form-urlencoded ' //自定义headers
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded'
       },
-      method: 'post',
-      url: '/loginRegister/register',
-      data: data,
-      transformRequest: [function(data) {
-        console.log(data);
-        let ret = '';
-        for(let it in data) {
-          ret += encodeURIComponent(data[it]) + '=' + encodeURIComponent(data) + '&'
-        }
-        return ret
-      }],
+      method: 'get',
+      url: '/loginRegister/encrypt',
     }).then((response) => {
-      console.log(response);
-      console.log(response);
+      let publicPem = response.data.data;
+      console.log(publicPem)
+      let encrypt = new JSEncrypt();
+      encrypt.setPublicKey(publicPem);
+      let PassWord = encrypt.encrypt(data.PassWord);
+      data.PassWord = PassWord;
+      axios({
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        method: 'post',
+        url: '/loginRegister/login',
+        data: data,
+        transformRequest: [function(data) {
+          let ret = '';
+          for(let it in data) {
+            ret += encodeURIComponent(it) + '=' + encodeURIComponent(data[it]) + '&'
+          }
+          return ret
+        }],
+      }).then((response) => {
+        console.log(response);
+      })
     })
+  
   
   
   
