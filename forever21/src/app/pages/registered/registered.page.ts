@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
-import {HttpClient, HttpHeaders} from "@angular/common/http";
+import {HttpClient} from "@angular/common/http";
 import axios from 'axios';
-import {environment} from '../../../environments/environment';
+// import {environment} from '../../../environments/environment';
 declare var JSEncrypt:any;
 
 @Component({
@@ -14,7 +14,7 @@ export class RegisteredPage implements OnInit {
   ) {
   }
   
-  httpUrl = `${environment.url}`;
+  // httpUrl = `${environment.url}`;
   userName = '';
   passWord = '';
   
@@ -32,11 +32,10 @@ export class RegisteredPage implements OnInit {
       url: '/loginRegister/encrypt',
     }).then((response) => {
       let publicPem = response.data.data;
-      console.log(publicPem)
+      console.log(publicPem);
       let encrypt = new JSEncrypt();
       encrypt.setPublicKey(publicPem);
-      let PassWord = encrypt.encrypt(data.PassWord);
-      data.PassWord = PassWord;
+      data.PassWord = encrypt.encrypt(data.PassWord);
       axios({
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded'
