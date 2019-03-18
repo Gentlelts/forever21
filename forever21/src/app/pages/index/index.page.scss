@@ -5,11 +5,28 @@
   background: url("../../../public/images/stars.png") no-repeat center center;
 }
 ._ro4v2s {
-  padding-left: 80px;
-  padding-right: 80px;
+  //padding-left: 80px;
+  //padding-right: 80px;
   position: relative;
   margin: 0px auto;
   height: 100%;
+  .home-slogan-left{
+    position: absolute;
+    top: 150px;
+    left: 280px;
+    color: #fff;
+    font-size: 36px;
+    letter-spacing: 2px;
+    z-index: 10;
+  }
+  .home-slogan-right{
+    position: absolute;
+    top: 280px;
+    right: 280px;
+    color: #fff;
+    font-size: 28px;
+    z-index: 10;
+  }
 }
 ._1bkpw4e {
   position: absolute;
@@ -20,4 +37,45 @@
   background-size: cover;
   width: 100%;
   transition: opacity 1s ease 0s;
+}
+.content{
+  position: relative !important;
+  min-height: 400px;
+  max-width: 1080px !important;
+  margin: 0 auto !important;
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+  background-color: transparent;
+  div{
+    .current-modules{
+      margin-top: 40px;
+      margin-bottom: 40px;
+      .modules-title-wrap{
+        margin-top: 32px;
+        .modules-title{
+          font-weight: 800 !important;
+          font-size: 24px !important;
+          line-height: 30px !important;
+          color: #484848 !important;
+          padding-top: 2px !important;
+          padding-bottom: 2px !important;
+        }
+      }
+      .current-modules-content{
+        margin-top: 32px;
+        .index-page-ul{
+          margin-left: -8px !important;
+          margin-right: -8px !important;
+          li{
+            width: 33.33333333333333% !important;
+            padding-left: 8px !important;
+            padding-right: 8px !important;
+            a{
+
+            }
+          }
+        }
+      }
+    }
+  }
 }
