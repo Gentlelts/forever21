@@ -1,4 +1,8 @@
 {
+  "/loginRegister/login": {
+    "target": "http://www.lynwhx.com:441",
+    "secure":false
+  },
   "/loginRegister/register": {
     "target": "http://www.lynwhx.com:441",
     "secure":false
