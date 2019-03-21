@@ -1,0 +1,759 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9683ab97-1cc0-4bed-b285-f401f5dd12af" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/../angular-test/my-app/node_modules/karma/config.tpl.js/" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-2076105777">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="7" />
+          <entry key="project.open.time.0" value="2" />
+          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.106" value="1" />
+          <entry key="project.open.time.32" value="1" />
+          <entry key="project.open.time.33" value="1" />
+          <entry key="project.open.time.35" value="1" />
+          <entry key="project.open.time.39" value="1" />
+          <entry key="project.open.time.42" value="1" />
+          <entry key="project.open.time.50" value="1" />
+          <entry key="project.open.time.53" value="1" />
+          <entry key="project.open.time.57" value="1" />
+          <entry key="project.open.time.63" value="1" />
+          <entry key="project.open.time.68" value="2" />
+          <entry key="project.open.time.76" value="1" />
+          <entry key="project.open.time.81" value="2" />
+          <entry key="project.opened" value="19" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts">
+        <counts>
+          <entry key="Angular2LanguageService" value="19" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="babelrc" value="1" />
+          <entry key="html" value="35" />
+          <entry key="ico" value="5" />
+          <entry key="js" value="3" />
+          <entry key="json" value="10" />
+          <entry key="png" value="4" />
+          <entry key="scss" value="49" />
+          <entry key="ts" value="28" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="HTML" value="35" />
+          <entry key="Image" value="9" />
+          <entry key="JSON" value="10" />
+          <entry key="JavaScript" value="3" />
+          <entry key="SCSS" value="49" />
+          <entry key="TypeScript" value="28" />
+          <entry key="tsconfig" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="html" value="1706" />
+          <entry key="json" value="74" />
+          <entry key="scss" value="857" />
+          <entry key="ts" value="193" />
+          <entry key="txt" value="87" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="HTML" value="1706" />
+          <entry key="JSON" value="74" />
+          <entry key="PLAIN_TEXT" value="87" />
+          <entry key="SCSS" value="857" />
+          <entry key="TypeScript" value="193" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/forever21/src/app/pages/index/index.page.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="205">
+              <caret line="126" column="27" selection-start-line="126" selection-start-column="27" selection-end-line="126" selection-end-column="27" />
+              <folding>
+                <element signature="n#div#0;n#el-main#0;n#el-container#0;n#!!top" />
+                <element signature="n#div#1;n#div#0;n#div#0;n#div#1;n#el-main#0;n#el-container#0;n#!!top" />
+                <element signature="n#li#1;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#1;n#el-main#0;n#el-container#0;n#!!top" />
+                <element signature="n#li#2;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#1;n#el-main#0;n#el-container#0;n#!!top" />
+                <element signature="n#div#0;n#div#1;n#div#1;n#el-main#0;n#el-container#0;n#!!top" />
+                <element signature="n#li#1;n#ul#0;n#div#1;n#div#0;n#div#2;n#div#1;n#el-main#0;n#el-container#0;n#!!top" />
+                <element signature="n#li#2;n#ul#0;n#div#1;n#div#0;n#div#2;n#div#1;n#el-main#0;n#el-container#0;n#!!top" />
+                <element signature="n#el-footer#0;n#el-container#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/forever21/src/app/pages/index/index.page.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1972">
+              <caret line="68" column="9" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/forever21/src/app/pages/help/help.page.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="232">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/forever21/src/app/pages/personal-center/personal-center.page.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>fff</find>
+      <find>webpack-dev-server</find>
+      <find>personal-center</find>
+      <find>HttpClient</find>
+      <find>border-radius-5</find>
+      <find>node</find>
+      <find>current-modules-content</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/forever21/src/app/in-memory-data.service.ts" />
+        <option value="$PROJECT_DIR$/forever21/src/app/pages/about/about.page.ts" />
+        <option value="$PROJECT_DIR$/forever21/src/app/hearder-banner-dark/hearder-banner-dark.component.html" />
+        <option value="$PROJECT_DIR$/forever21/src/app/header-banner-dark/header-banner-dark.component.scss" />
+        <option value="$PROJECT_DIR$/forever21/src/app/pages/registered/registered.page.html" />
+        <option value="$PROJECT_DIR$/forever21/src/app/pages/login/login.page.html" />
+        <option value="$PROJECT_DIR$/forever21/src/app/header-banner/header-banner.component.scss" />
+        <option value="$PROJECT_DIR$/forever21/src/app/pages/registered/registered.page.scss" />
+        <option value="$PROJECT_DIR$/forever21/src/app/pages/login/login.page.scss" />
+        <option value="$PROJECT_DIR$/forever21/src/app/pages/about/about.page.scss" />
+        <option value="$PROJECT_DIR$/forever21/src/app/footer-banner/footer-banner.component.html" />
+        <option value="$PROJECT_DIR$/forever21/src/app/footer-banner/footer-banner.component.scss" />
+        <option value="$PROJECT_DIR$/forever21/src/app/pages/about/about.page.html" />
+        <option value="$PROJECT_DIR$/forever21/package-lock.json" />
+        <option value="$PROJECT_DIR$/forever21/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/forever21/src/app/app-routing.module.ts" />
+        <option value="$PROJECT_DIR$/forever21/src/app/header-banner/header-banner.component.html" />
+        <option value="$PROJECT_DIR$/forever21/src/app/header-banner-dark/header-banner-dark.component.html" />
+        <option value="$PROJECT_DIR$/forever21/src/app/pages/personal-center/personal-center.page.scss" />
+        <option value="$PROJECT_DIR$/forever21/src/app/pages/personal-center/personal-center.page.html" />
+        <option value="$PROJECT_DIR$/forever21/src/environments/environment.prod.ts" />
+        <option value="$PROJECT_DIR$/forever21/src/environments/environment.ts" />
+        <option value="$PROJECT_DIR$/forever21/proxy.config.json" />
+        <option value="$PROJECT_DIR$/forever21/src/index.html" />
+        <option value="$PROJECT_DIR$/forever21/angular.json" />
+        <option value="$PROJECT_DIR$/forever21/src/app/pages/registered/registered.page.ts" />
+        <option value="$PROJECT_DIR$/forever21/src/styles.scss" />
+        <option value="$PROJECT_DIR$/forever21/src/app/pages/index/index.page.ts" />
+        <option value="$PROJECT_DIR$/forever21/package.json" />
+        <option value="$PROJECT_DIR$/forever21/src/app/pages/help/help.page.html" />
+        <option value="$PROJECT_DIR$/forever21/src/app/pages/index/index.page.scss" />
+        <option value="$PROJECT_DIR$/forever21/src/app/pages/index/index.page.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/forever21/node_modules" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/forever21/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="5" />
+    <option name="width" value="1882" />
+    <option name="height" value="955" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="forever21" type="b2602c69:ProjectViewProjectNode" />
+              <item name="forever21" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="D:/2workspace/cloudwallweb" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="ts.external.directory.path" value="D:\3ziji\forever21\forever21\node_modules\typescript\lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\3ziji\forever21\forever21\src\assets\images" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\3ziji\forever21\forever21\src\assets\javascript" />
+      <recent name="D:\3ziji\forever21\forever21\src\assets\images" />
+      <recent name="D:\3ziji\forever21\forever21\src" />
+      <recent name="D:\3ziji\forever21\forever21\src\public" />
+      <recent name="D:\3ziji\forever21\forever21\src\public\images" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/forever21/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9683ab97-1cc0-4bed-b285-f401f5dd12af" name="Default Changelist" comment="" />
+      <created>1541993934225</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1541993934225</updated>
+      <workItem from="1541993936674" duration="2832000" />
+      <workItem from="1542004548557" duration="1345000" />
+      <workItem from="1542010985525" duration="3612000" />
+      <workItem from="1542247854670" duration="9183000" />
+      <workItem from="1542333181913" duration="22954000" />
+      <workItem from="1542589776792" duration="1588000" />
+      <workItem from="1542591403967" duration="11327000" />
+      <workItem from="1542675921200" duration="13642000" />
+      <workItem from="1542762340771" duration="3259000" />
+      <workItem from="1542848778875" duration="1316000" />
+      <workItem from="1544422400396" duration="1067000" />
+      <workItem from="1544426555354" duration="7672000" />
+      <workItem from="1544497859752" duration="5920000" />
+      <workItem from="1544576988246" duration="4005000" />
+      <workItem from="1544663529109" duration="1230000" />
+      <workItem from="1544749761417" duration="4392000" />
+      <workItem from="1546852560047" duration="899000" />
+      <workItem from="1546910666593" duration="4106000" />
+      <workItem from="1546997610493" duration="597000" />
+      <workItem from="1547082737701" duration="1243000" />
+      <workItem from="1547170102786" duration="1196000" />
+      <workItem from="1547428404760" duration="3294000" />
+      <workItem from="1547514575987" duration="14813000" />
+      <workItem from="1547602520517" duration="7496000" />
+      <workItem from="1547687720210" duration="9076000" />
+      <workItem from="1547774577058" duration="2393000" />
+      <workItem from="1547953843592" duration="9268000" />
+      <workItem from="1548221394860" duration="7609000" />
+      <workItem from="1548397064306" duration="556000" />
+      <workItem from="1550453117600" duration="6629000" />
+      <workItem from="1550627559915" duration="21863000" />
+      <workItem from="1550712304754" duration="15770000" />
+      <workItem from="1550811990429" duration="691000" />
+      <workItem from="1551665871290" duration="14000" />
+      <workItem from="1551704006634" duration="1249000" />
+      <workItem from="1551858045376" duration="10909000" />
+      <workItem from="1551921346944" duration="570000" />
+      <workItem from="1552007947403" duration="3183000" />
+      <workItem from="1552266921367" duration="6624000" />
+      <workItem from="1552353747147" duration="599000" />
+      <workItem from="1552440024760" duration="7971000" />
+      <workItem from="1552527010160" duration="594000" />
+      <workItem from="1552619791247" duration="1119000" />
+      <workItem from="1552872212663" duration="1227000" />
+      <workItem from="1552901813930" duration="599000" />
+      <workItem from="1552958675516" duration="12718000" />
+      <workItem from="1552994129317" duration="592000" />
+      <workItem from="1553047979829" duration="599000" />
+      <workItem from="1553131141396" duration="721000" />
+    </task>
+    <task id="LOCAL-00001" summary="1、完成about页面&#10;2、添加footer">
+      <created>1550660058317</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1550660058317</updated>
+    </task>
+    <task id="LOCAL-00002" summary="新页面">
+      <created>1550712546178</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1550712546178</updated>
+    </task>
+    <task id="LOCAL-00003" summary="错别字">
+      <created>1550717539251</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1550717539251</updated>
+    </task>
+    <task id="LOCAL-00004" summary="补页面">
+      <created>1550812083643</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1550812083643</updated>
+    </task>
+    <task id="LOCAL-00005" summary="补页面">
+      <created>1551868304069</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1551868304069</updated>
+    </task>
+    <task id="LOCAL-00006" summary="发送请求">
+      <created>1552649916850</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1552649916850</updated>
+    </task>
+    <task id="LOCAL-00007" summary="首页">
+      <created>1552993235819</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1552993235819</updated>
+    </task>
+    <task id="LOCAL-00008" summary="首页">
+      <created>1553131553561</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1553131553561</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="89030000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="5" width="1882" height="955" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1632321" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.329718" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32886723" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50263435" side_tool="true" weight="0.36442515" />
+      <window_info anchor="bottom" id="TypeScript" order="10" sideWeight="0.49894625" weight="0.25213155" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49736565" weight="0.31181487" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/forever21/node_modules/karma/config.tpl.js" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1、完成about页面&#10;2、添加footer" />
+    <MESSAGE value="新页面" />
+    <MESSAGE value="错别字" />
+    <MESSAGE value="补页面" />
+    <MESSAGE value="发送请求" />
+    <MESSAGE value="首页" />
+    <option name="LAST_COMMIT_MESSAGE" value="首页" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/forever21/src/app/hearder-banner-dark/hearder-banner-dark.component.html" />
+    <entry file="file://$PROJECT_DIR$/forever21/src/app/header-banner/header-banner.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="3" column="30" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forever21/src/app/header-banner-dark/header-banner-dark.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forever21/src/app/pages/login/login.page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forever21/src/app/header-banner/header-banner.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="4" column="21" lean-forward="true" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forever21/src/app/pages/login/login.page.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="11" column="78" lean-forward="true" selection-start-line="11" selection-start-column="78" selection-end-line="11" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forever21/src/public/images/stars.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forever21/src/app/pages/about/about.page.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55">
+          <caret line="3" column="25" lean-forward="true" selection-start-line="3" selection-start-column="25" selection-end-line="7" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forever21/src/app/pages/about/about.page.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forever21/src/app/footer-banner/footer-banner.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forever21/src/app/footer-banner/footer-banner.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="3" column="30" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forever21/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="65" column="27" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forever21/src/app/footer-banner/footer-banner.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forever21/src/app/pages/personal-center/personal-center.page.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="5" column="2" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forever21/src/app/header-banner-dark/header-banner-dark.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="6" column="13" lean-forward="true" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forever21/src/app/header-banner/header-banner.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="635">
+          <caret line="30" column="15" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forever21/src/app/header-banner-dark/header-banner-dark.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="3" column="35" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forever21/src/assets/images/user-default.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forever21/src/diamond.ico" />
+    <entry file="file://$PROJECT_DIR$/forever21/src/favicon.ico" />
+    <entry file="file://$PROJECT_DIR$/forever21/src/app/pages/personal-center/personal-center.page.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forever21/src/environments/environment.prod.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forever21/node_modules/axios/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="111" column="2" selection-start-line="111" selection-start-column="2" selection-end-line="111" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forever21/node_modules/@angular/common/http/src/client.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forever21/proxy.config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forever21/src/environments/environment.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forever21/src/app/pages/about/about.page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="57" column="34" selection-start-line="57" selection-start-column="34" selection-end-line="57" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forever21/src/public/images/bg2.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forever21/src/assets/javascript/JSEncrypt.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forever21/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="20" column="48" lean-forward="true" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forever21/.babelrc">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forever21/src/tsconfig.app.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forever21/src/app/pages/registered/registered.page.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="42" column="10" lean-forward="true" selection-start-line="42" selection-start-column="10" selection-end-line="42" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forever21/angular.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="69" column="26" lean-forward="true" selection-start-line="69" selection-start-column="26" selection-end-line="69" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forever21/src/app/pages/registered/registered.page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="5" column="26" lean-forward="true" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forever21/src/app/pages/registered/registered.page.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="11" column="78" lean-forward="true" selection-start-line="11" selection-start-column="78" selection-end-line="11" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forever21/src/app/app-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forever21/src/app/pages/index/index.page.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forever21/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forever21/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forever21/src/styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2610">
+          <caret line="90" column="16" selection-start-line="90" selection-start-column="1" selection-end-line="90" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forever21/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forever21/node_modules/node-sass/lib/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forever21/node_modules/sass-loader/lib/loader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-109">
+          <caret line="45" column="71" selection-start-line="45" selection-start-column="71" selection-end-line="45" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forever21/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="44" selection-start-line="44" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forever21/src/app/pages/index/index.page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="126" column="27" selection-start-line="126" selection-start-column="27" selection-end-line="126" selection-end-column="27" />
+          <folding>
+            <element signature="n#div#0;n#el-main#0;n#el-container#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#1;n#el-main#0;n#el-container#0;n#!!top" />
+            <element signature="n#li#1;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#1;n#el-main#0;n#el-container#0;n#!!top" />
+            <element signature="n#li#2;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#1;n#el-main#0;n#el-container#0;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#div#1;n#el-main#0;n#el-container#0;n#!!top" />
+            <element signature="n#li#1;n#ul#0;n#div#1;n#div#0;n#div#2;n#div#1;n#el-main#0;n#el-container#0;n#!!top" />
+            <element signature="n#li#2;n#ul#0;n#div#1;n#div#0;n#div#2;n#div#1;n#el-main#0;n#el-container#0;n#!!top" />
+            <element signature="n#el-footer#0;n#el-container#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forever21/src/app/pages/index/index.page.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1972">
+          <caret line="68" column="9" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forever21/src/app/pages/help/help.page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forever21/src/app/pages/personal-center/personal-center.page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
