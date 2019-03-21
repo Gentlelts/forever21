@@ -41,7 +41,7 @@ export class RegisteredPage implements OnInit {
           'Content-Type': 'application/x-www-form-urlencoded'
         },
         method: 'post',
-        url: '/loginRegister/login',
+        url: '/loginRegister/register',
         data: data,
         transformRequest: [function(data) {
           let ret = '';
@@ -52,12 +52,11 @@ export class RegisteredPage implements OnInit {
         }],
       }).then((response) => {
         console.log(response);
+        if(response.data.code == 200){
+          alert("注册成功！请牢记登录账号和密码");
+        }
       })
     })
-  
-  
-  
-  
   }
   
   ngOnInit() {
