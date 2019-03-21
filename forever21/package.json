@@ -1,5 +1,6 @@
 {
   "name": "forever21",
+  "author": "gentlelts@163.com",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",

@@ -23,7 +23,8 @@ import {RegisteredPage} from './pages/registered/registered.page';
 import { HeaderBannerDarkComponent } from './header-banner-dark/header-banner-dark.component';
 import { FooterBannerComponent } from './footer-banner/footer-banner.component';
 import { PersonalCenterPage } from './pages/personal-center/personal-center.page';
-import { FooterBannerLightComponent } from './footer-banner-light/footer-banner-light.component'
+import { FooterBannerLightComponent } from './footer-banner-light/footer-banner-light.component';
+import { ReleaseStoryPage } from './pages/release-story/release-story.page'
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { FooterBannerLightComponent } from './footer-banner-light/footer-banner-
     FooterBannerComponent,
     PersonalCenterPage,
     FooterBannerLightComponent,
+    ReleaseStoryPage,
   ],
   imports: [
     BrowserModule,

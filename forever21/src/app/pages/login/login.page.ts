@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Location } from '@angular/common';
 import axios from "axios";
 declare var JSEncrypt:any;
@@ -12,7 +12,8 @@ declare var JSEncrypt:any;
 export class LoginPage implements OnInit {
   constructor(
     public http: HttpClient,
-    private route: ActivatedRoute,
+    private Activatedroute: ActivatedRoute,
+    private router: Router,
     private location: Location
   ) { }
   userName = '';
@@ -22,6 +23,13 @@ export class LoginPage implements OnInit {
       UserName:this.userName,
       PassWord:this.passWord
     };
+    console.log(data);
+    if(data.UserName == ''){
+      alert('账号不能为空！')
+    }
+    if(data.PassWord == ''){
+      alert('密码不能为空！')
+    }
     axios({
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded'
@@ -56,6 +64,7 @@ export class LoginPage implements OnInit {
           window.localStorage.setItem('UserID',UserID);
           window.localStorage.setItem('UserName',this.userName);
           window.localStorage.setItem('PassWord',this.passWord);
+          this.router.navigate(['/']);
         }
         if(response.data.code == 402){
           alert(response.data.msg);

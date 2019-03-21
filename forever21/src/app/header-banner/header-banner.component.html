@@ -17,16 +17,16 @@
           <li class="_1g2dfiu" routerLink="/help">
             <span class="_gngqxi"><a>帮助</a></span>
           </li>
-          <li class="_1g2dfiu" routerLink="/registered">
+          <li *ngIf="!hasLogin" class="_1g2dfiu" routerLink="/registered">
             <span class="_gngqxi"><a>注册</a></span>
           </li>
-          <li class="_1g2dfiu" routerLink="/login">
+          <li *ngIf="!hasLogin" class="_1g2dfiu" routerLink="/login">
             <span class="_gngqxi"><a>登录</a></span>
           </li>
-          <li class="_1g2dfiu" routerLink="/personalCenter">
+          <li *ngIf="hasLogin" class="_1g2dfiu" routerLink="/personalCenter">
             <span class="_gngqxi"><a>个人中心</a></span>
           </li>
-          <li class="_1g2dfiu" routerLink="/personalCenter">
+          <li *ngIf="hasLogin" class="_1g2dfiu" (click)="LoginOut()">
             <span class="_gngqxi"><a>退出</a></span>
           </li>
         </ul>
