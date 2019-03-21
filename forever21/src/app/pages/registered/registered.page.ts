@@ -1,65 +1,33 @@
-import {Component, OnInit} from '@angular/core';
-import {HttpClient} from "@angular/common/http";
-import axios from 'axios';
-// import {environment} from '../../../environments/environment';
-declare var JSEncrypt:any;
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { foreverHttp } from '../../../environments/axiosHttp';
+declare var JSEncrypt: any;
 
 @Component({
   templateUrl: './registered.page.html',
   styleUrls: ['./registered.page.scss']
 })
+
 export class RegisteredPage implements OnInit {
-  constructor(
-    public http: HttpClient,
-  ) {
-  }
-  
-  // httpUrl = `${environment.url}`;
+  constructor(private router: Router) {}
   userName = '';
   passWord = '';
-  
-  //注册
-  Registered() {
+  Registered() {//注册
     let data = {
       UserName: this.userName,
       PassWord: this.passWord
     };
-    axios({
-      headers: {
-        'Content-Type': 'application/x-www-form-urlencoded'
-      },
-      method: 'get',
-      url: '/loginRegister/encrypt',
-    }).then((response) => {
-      let publicPem = response.data.data;
-      console.log(publicPem);
+    foreverHttp.get('/loginRegister/encrypt', {}, (response: any) => {//这里拦截器已拦截，成功才会执行
+      let publicPem = response.data;
       let encrypt = new JSEncrypt();
       encrypt.setPublicKey(publicPem);
       data.PassWord = encrypt.encrypt(data.PassWord);
-      axios({
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded'
-        },
-        method: 'post',
-        url: '/loginRegister/login',
-        data: data,
-        transformRequest: [function(data) {
-          let ret = '';
-          for(let it in data) {
-            ret += encodeURIComponent(it) + '=' + encodeURIComponent(data[it]) + '&'
-          }
-          return ret
-        }],
-      }).then((response) => {
-        console.log(response);
+      foreverHttp.post('/loginRegister/login', data, (response: any) => {
+        console.log(response)
+        this.router.navigate(['/about']);
       })
     })
-  
-  
-  
-  
   }
-  
   ngOnInit() {
   }
 }
