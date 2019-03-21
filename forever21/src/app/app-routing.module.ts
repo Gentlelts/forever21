@@ -16,7 +16,6 @@ const routes: Routes = [
     { path: 'help', component: HelpPage },
     { path: 'story', component: StoryPage },
     { path: 'personalCenter', component: PersonalCenterPage },
-
     // otherwise redirect to home
     { path: '**', redirectTo: '' }
   ];
