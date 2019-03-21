@@ -22,7 +22,10 @@ export class LoginPage implements OnInit {
       encrypt.setPublicKey(publicPem);
       data.PassWord = encrypt.encrypt(data.PassWord);
       foreverHttp.post('/loginRegister/login', data, (response: any) => {
-        console.log(response)
+        let UserID = response.data.data.UserID;
+        window.localStorage.setItem('UserID',UserID);
+        window.localStorage.setItem('UserName',this.userName);
+        window.localStorage.setItem('PassWord',this.passWord);
       })
     })
   }
