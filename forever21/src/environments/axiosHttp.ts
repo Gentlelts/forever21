@@ -2,7 +2,7 @@ import axios from 'axios';
 import qs from 'qs';
 
 axios.defaults.timeout = 5000;
-axios.defaults.baseURL = 'http://localhost:441';
+// axios.defaults.baseURL = 'http://localhost:441';
 // http request 拦截器 所有的请求都会执行一次
 axios.interceptors.request.use(config => {
     config.headers = {
