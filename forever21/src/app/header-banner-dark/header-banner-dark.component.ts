@@ -14,8 +14,8 @@ export class HeaderBannerDarkComponent implements OnInit {
   LoginOut() {
     window.localStorage.removeItem('UserID');
     window.localStorage.removeItem('UserName');
-    window.localStorage.removeItem('PassWord');
     this.router.navigate(['/']);
+    this.hasLogin = true;
   }
   hasLogin = false;
   ngOnInit() {
