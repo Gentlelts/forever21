@@ -15,8 +15,11 @@ axios.interceptors.request.use(config => {
 });
 // http response 拦截器 所有的返回的接口都会执行一次
 axios.interceptors.response.use(response => {
-    if(response.status == 401) {}
-    return response.data;
+    if(response.status == 200) {
+        return response.data;
+    }else{
+        return false;
+    }
 }, error => {
     return 'error';
 });

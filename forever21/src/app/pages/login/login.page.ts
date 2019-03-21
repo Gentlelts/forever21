@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { foreverHttp } from '../../../environments/axiosHttp';
+import { ElMessageService } from 'element-angular';
+
 declare var JSEncrypt: any;
 
 @Component({
@@ -8,7 +11,10 @@ declare var JSEncrypt: any;
 })
 
 export class LoginPage implements OnInit {
-  constructor() {}
+  constructor(
+    private message: ElMessageService,
+    private router: Router
+  ) {}
   userName = '';
   passWord = '';
   LoginIn(){//登录
@@ -22,13 +28,21 @@ export class LoginPage implements OnInit {
       encrypt.setPublicKey(publicPem);
       data.PassWord = encrypt.encrypt(data.PassWord);
       foreverHttp.post('/loginRegister/login', data, (response: any) => {
-        let UserID = response.data.UserID;
-        window.localStorage.setItem('UserID',UserID);
-        window.localStorage.setItem('UserName',this.userName);
-        window.localStorage.setItem('PassWord',this.passWord);
+        if(!response) return;
+        if(response.code == 200){
+          this.showMsg('success','登陆成功');
+          window.localStorage.setItem('UserID',response.data.UserID);
+          window.localStorage.setItem('UserName',this.userName);
+          this.router.navigate(['/']);
+        }else{
+          this.showMsg('warning',response.msg);
+        }
       })
     })
   }
-  ngOnInit() {
+  showMsg(type:any,msg:String) {
+    this.message.setOptions({ showClose: true })
+    this.message[type](msg)
   }
+  ngOnInit() {}
 }
