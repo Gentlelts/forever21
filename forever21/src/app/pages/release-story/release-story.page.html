@@ -1,3 +1,36 @@
-<p>
-  release-story works!
-</p>
+<div class="release-story-page">
+  <app-header-banner-dark></app-header-banner-dark>
+  <div class="release-story-content">
+    <div class="page-moustache-navigation">
+      <ul class="">
+        <li class="moustache-navigation-item color-409EFF cursor-pointer" routerLink="/"><span>首页&nbsp;>></span></li>
+        <li class="moustache-navigation-item color-409EFF cursor-pointer" routerLink="/personalCenter"><span>个人中心&nbsp;>></span></li>
+        <li class="moustache-navigation-item" routerLink="/releaseStory"><span>故事分享</span></li>
+      </ul>
+    </div>
+    <div class="release-story">
+      <ul>
+        <li class="release-story-item">
+          <div class="release-story-title">
+            <span>标题</span>
+          </div>
+          <div class="">
+            <el-input [model]="input" placeholder="请输入标题……"></el-input>
+          </div>
+        </li>
+        <li class="release-story-item">
+          <div class="release-story-title">
+            <span>内容</span>
+          </div>
+          <div class="release-story-input">
+            <el-input type="textarea" class="release-story-el-input"
+                      [autosize]="{ minRows: 2, maxRows: 10}"
+                      placeholder="请输入内容^"
+                      [model]="textarea">
+            </el-input>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

@@ -10,7 +10,7 @@
       <div class="t-a-c personal-info">
         <img src="assets/images/user-default.png" alt="user-default">
         <div class="user-name">
-          馒头花卷
+          {{userName}}
         </div>
         <div class="sign-nature">
           <span>一句话描述自己吧~</span>
@@ -24,7 +24,7 @@
       <li class="p-r-20">作品/故事</li>
       <li class="">收到的赞 (200)</li>
     </ul>
-    <div class="bg-fff p-t-10 p-b-30">
+    <div class="bg-fff p-t-10 p-b-30 cursor-pointer" (click)="releaseStory()">
       <div class="qv-icon-box"></div>
       <div class="qv-alert-text">
         您还没有上传任何作品/故事<br>

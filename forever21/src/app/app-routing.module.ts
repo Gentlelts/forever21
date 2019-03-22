@@ -7,6 +7,7 @@ import { AboutPage } from './pages/about/about.page';
 import { HelpPage } from './pages/help/help.page';
 import { StoryPage } from './pages/story/story.page';
 import { PersonalCenterPage } from './pages/personal-center/personal-center.page';
+import { ReleaseStoryPage } from './pages/release-story/release-story.page';
 
 const routes: Routes = [
     { path: '', component: IndexPage },
@@ -16,6 +17,7 @@ const routes: Routes = [
     { path: 'help', component: HelpPage },
     { path: 'story', component: StoryPage },
     { path: 'personalCenter', component: PersonalCenterPage },
+    { path: 'releaseStory', component: ReleaseStoryPage },
     // otherwise redirect to home
     { path: '**', redirectTo: '' }
   ];

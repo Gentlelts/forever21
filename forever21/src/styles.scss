@@ -52,6 +52,11 @@ ul, menu, dir {
   //margin-inline-end: 0px;
   //padding-inline-start: 0px;
 }
+::-webkit-scrollbar{width:8px;}
+::-webkit-scrollbar-track{background-color:#eee;}
+::-webkit-scrollbar-thumb{background-color:#ccc;}
+::-webkit-scrollbar-thumb:hover {background-color:#999}
+::-webkit-scrollbar-thumb:active {background-color:#eee}
 
 input {
   -webkit-appearance: textfield;
@@ -94,6 +99,10 @@ h1,h2,h3,h4,h5,p{
 
 .po-si-re {
   position: relative;
+}
+
+.d-i-b {
+  display: inline-block;
 }
 
 .dis-flex {
@@ -167,6 +176,10 @@ h1,h2,h3,h4,h5,p{
   min-height: 100%;
 }
 
+.cursor-pointer{
+  cursor: pointer;
+}
+
 .o-v-p {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -211,6 +224,10 @@ h1,h2,h3,h4,h5,p{
 
 .color-3A2A95{
   color:#3A2A95
+}
+
+.color-409EFF{
+  color:#409EFF
 }
 
 .f-w-600 {
