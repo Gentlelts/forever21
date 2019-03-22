@@ -2,13 +2,14 @@ import axios from 'axios';
 import qs from 'qs';
 
 axios.defaults.timeout = 5000;
-// axios.defaults.baseURL = 'http://localhost:441';
+//axios.defaults.baseURL = 'http://forever21.lynwhx.com';
 // http request 拦截器 所有的请求都会执行一次
 axios.interceptors.request.use(config => {
   config.headers = {
     'Content-Type': 'application/x-www-form-urlencoded ' // 自定义headers
   };
   config.data = qs.stringify(config.data);
+  console.log(config)
   return config;
 }, error => {
   return Promise.reject(error);

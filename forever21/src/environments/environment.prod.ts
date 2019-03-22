@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  url:'http://www.lynwhx.com:441'
+  url:'http://forever21.lynwhx.com'
 };
