@@ -120,18 +120,25 @@
                   <div class="">
                     <img class="w-100 border-radius-5" src="assets/images/story-0.png" alt="">
                   </div>
-                  <div>
+                  <div class="p-t-5">
                     <p></p>
-                    <p>标题是MOHUANG|对面就是太古里春熙路和地铁站|下楼就是小龙坎</p>
-                    <p>内容是</p>
-                    <div class="dis-flex">
-                      <div class="">
-                        <span></span>
-                        <span>2019-03-19 10:21:45</span>
+                    <p class="story-title" style="-webkit-box-orient: vertical;">MOHUANG|对面就是太古里春
+                      对面就是太古里春熙路和地铁站熙路和地铁站对面就是太古里春熙路和地铁站|下楼就是小龙坎</p>
+                    <p class="f-z-14 m-t-4 story-detail">内容是</p>
+                    <div class="dis-flex m-t-2">
+                      <div class="f-g-1">
+                        <span class="icon iconfont icon-user f-z-14 p-r-5"></span>
+                        <span>馒头花卷</span>
                       </div>
-                      <div class="">
-                        <span></span>
-                        <span></span>
+                      <div class="f-g-1">
+                        <span class="icon iconfont icon-zuanshi1 f-z-14 p-r-5"
+                              (click)="likeStory()" [ngClass]="{'like-story':likeThis}"></span>
+                              <!--(click)="likeStory()" [ngClass]="{'like-story':likeThis && }"></span>-->
+                        <span>230</span>
+                      </div>
+                      <div class="f-g-1">
+                        <span class="icon iconfont icon-time f-z-14 p-r-5"></span>
+                        <span>2019-03-19 10:21:45</span>
                       </div>
                     </div>
                   </div>

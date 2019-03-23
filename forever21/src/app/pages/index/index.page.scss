@@ -1,4 +1,3 @@
-
 ._1pksixi {
   height: 480px;
   transition: opacity 0.5s ease 0s;
@@ -56,10 +55,10 @@
         padding-top: 20px;
         padding-bottom: 8px;
         .modules-title{
-          font-weight: 800 !important;
-          font-size: 24px !important;
-          line-height: 30px !important;
-          color: #484848 !important;
+          font-weight: 800;
+          font-size: 24px;
+          line-height: 30px;
+          color: #484848;
           padding-top: 2px !important;
           padding-bottom: 2px !important;
         }
@@ -71,10 +70,28 @@
           margin-right: -8px !important;
           li{
             width: 33.33333333333333% !important;
-            padding-left: 8px !important;
-            padding-right: 8px !important;
+            padding-left: 8px;
+            padding-right: 8px;
             a{
-
+              .story-title{
+                max-width: 333.33px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                font-size: 18px;
+                font-weight: 800;
+                line-height: 22px;
+                max-height: 44px;
+              }
+              .story-detail{
+                max-height: 20px;
+                max-width: 166.67px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+              }
             }
           }
         }
