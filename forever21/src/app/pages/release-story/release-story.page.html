@@ -30,7 +30,29 @@
             </el-input>
           </div>
         </li>
+        <li class="release-story-item">
+          <div class="release-story-title">
+            <span>内容</span>
+          </div>
+          <div class="">
+            <!--这个地方-->
+            <el-upload action="http://forever21.lynwhx.com/article/uploadImg"
+                       list-type="picture-card"
+                       (preview)="previewHandle($event)"
+                       (error)="errorHandle($event)">
+              <ng-template #trigger>
+                <i class="el-icon-plus"></i>
+              </ng-template>
+            </el-upload>
+
+            <el-dialog [(visible)]="showDialog" size="tiny">
+              <img width="100%" [src]="dialogImageUrl" alt="">
+            </el-dialog>
+          </div>
+        </li>
+
       </ul>
     </div>
   </div>
+  <app-footer-banner-light></app-footer-banner-light>
 </div>

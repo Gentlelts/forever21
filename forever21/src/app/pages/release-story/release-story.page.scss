@@ -16,7 +16,7 @@
       }
     }
     .release-story{
-      margin-top: 15px;
+      margin-top: 10px;
       background: #fff;
       padding: 15px;
       ul{
@@ -28,8 +28,10 @@
               background: #fff;
               .el-textarea{
                 height: 300px;
+                max-height: 300px;
                 .el-textarea__inner{
                   height: 300px!important;
+                  max-height: 300px;
                 }
               }
             }

@@ -11,13 +11,13 @@ export class HeaderBannerDarkComponent implements OnInit {
   constructor(
     private router: Router,
     ) { }
+  hasLogin = false;
   LoginOut() {
     window.localStorage.removeItem('UserID');
     window.localStorage.removeItem('UserName');
     this.router.navigate(['/']);
     this.hasLogin = true;
   }
-  hasLogin = false;
   ngOnInit() {
     let UserID = window.localStorage.getItem('UserID');
     this.hasLogin = UserID != null;
