@@ -5,6 +5,10 @@ import {HttpClientModule} from '@angular/common/http';
 import {FormsModule} from "@angular/forms";
 
 import {ElModule} from 'element-angular';
+import { registerLocaleData } from '@angular/common';
+import { NgZorroAntdModule, NZ_I18N, zh_CN } from 'ng-zorro-antd';
+import zh from '@angular/common/locales/zh';
+registerLocaleData(zh);
 
 import {AppRoutingModule} from './app-routing.module';
 
@@ -24,7 +28,8 @@ import { HeaderBannerDarkComponent } from './header-banner-dark/header-banner-da
 import { FooterBannerComponent } from './footer-banner/footer-banner.component';
 import { PersonalCenterPage } from './pages/personal-center/personal-center.page';
 import { FooterBannerLightComponent } from './footer-banner-light/footer-banner-light.component';
-import { ReleaseStoryPage } from './pages/release-story/release-story.page'
+import { ReleaseStoryPage } from './pages/release-story/release-story.page';
+import { FileUploadComponent } from './file-upload/file-upload.component';
 
 @NgModule({
   declarations: [
@@ -42,16 +47,20 @@ import { ReleaseStoryPage } from './pages/release-story/release-story.page'
     PersonalCenterPage,
     FooterBannerLightComponent,
     ReleaseStoryPage,
+    FileUploadComponent,
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     BrowserAnimationsModule,
     FormsModule,
+    NgZorroAntdModule,
     ElModule.forRoot(),
     AppRoutingModule,
   ],
-  providers: [],
+  providers: [
+    { provide: NZ_I18N, useValue: zh_CN }
+    ],
   bootstrap: [AppComponent]
 })
 export class AppModule {
