@@ -22,28 +22,23 @@
       ul{
         .release-story-item{
           margin: 15px 0;
-          .release-story-input{
-            background: #fff;
-            .release-story-el-input{
-              background: #fff;
-              .el-textarea{
-                height: 300px;
-                max-height: 300px;
-                .el-textarea__inner{
-                  height: 300px!important;
-                  max-height: 300px;
-                }
-              }
-            }
+          .release-story-title{
+            line-height: 28px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #24292e;
           }
         }
       }
-      .release-story-title{
-        line-height: 28px;
-        font-size: 14px;
-        font-weight: 600;
-        margin-bottom: 8px;
-        color: #24292e;
+      .release-story-btn{
+        margin: 0 auto;
+        width: 120px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 5px;
+        color: #ffffff;
+        background: #409EFF;
       }
     }
   }
