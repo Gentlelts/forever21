@@ -18,7 +18,7 @@
             <span>标题</span>
           </div>
           <div class="">
-            <el-input [model]="releaseTitle" placeholder="请输入标题……"></el-input>
+            <el-input [(model)]="releaseTitle" placeholder="请输入标题……（10-50字）"></el-input>
           </div>
         </li>
         <li class="release-story-item">
@@ -26,10 +26,10 @@
             <span>内容</span>
           </div>
           <div class="">
-            <el-input type="textarea"
+            <el-input type="textarea" style="height: 200px;"
                       [autosize]="{ minRows: 2, maxRows: 10}"
-                      placeholder="请输入内容^"
-                      [model]="releaseContent">
+                      placeholder="请输入内容……"
+                      [(model)]="releaseContent">
             </el-input>
           </div>
         </li>
@@ -43,7 +43,7 @@
               nzAction="/article/uploadImg"
               nzListType="picture-card"
               [(nzFileList)]="fileList"
-              [nzShowButton]="fileList.length < 3"
+              [nzShowButton]="fileList.length < 5"
               [nzShowUploadList]="showUploadList"
               [nzPreview]="handlePreview"
               nzName="fileVal"

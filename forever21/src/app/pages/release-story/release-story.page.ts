@@ -32,13 +32,11 @@ export class ReleaseStoryPage implements OnInit {
 
   // 发布作品
   publishStory(){
-    console.log(this.fileList);
-    // console.log(this.fileList.toString());
-    if(this.releaseTitle.length <= 10 || this.releaseTitle.length >= 30){
+    if(this.releaseTitle.length <= 10 || this.releaseTitle.length >= 50){
       this.showMsg('warning','请注意故事标题字数~');
       return false;
     }
-    if(this.releaseContent.length <= 30 || this.releaseTitle.length >= 800){
+    if(this.releaseContent.length <= 30 || this.releaseTitle.length >= 1200){
       this.showMsg('warning','请注意故事内容字数~');
       return false;
     }
@@ -46,11 +44,25 @@ export class ReleaseStoryPage implements OnInit {
       this.showMsg('warning','故事图片不能为空~');
       return false;
     }
+    let DocUrl = [];
+    for (let i = 0; i < this.fileList.length; i++) {
+      DocUrl.push(this.fileList[i].response.data.fileUrl);
+    }
     let data = {
       Title: this.releaseTitle,
       Content: this.releaseContent,
+      DocUrl:DocUrl.toString(),
+      ArticleID:window.localStorage.getItem('UserName')
     };
-    // foreverHttp.post('/article/publish')
+    foreverHttp.post('/article/publish',data,(response: any) =>{
+      if(response.code === 200){
+        this.showMsg('success','发布成功~');
+        this.fileList = [];
+        this.releaseTitle = '';
+        this.releaseContent = '';
+        DocUrl = [];
+      }
+    });
   }
 
   showMsg(type: any, msg: String) {

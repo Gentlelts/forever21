@@ -17,6 +17,10 @@
         margin: 0 30px;
         span:first-child{
           display: inline-block;
+          padding-right: 5px;
+        }
+        span:nth-child(2){
+          display: inline-block;
           padding-right: 10px;
         }
       }

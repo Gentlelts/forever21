@@ -46,5 +46,13 @@
       "^/api": ""
     },
     "changeOrigin": true
+  },
+  "/article/details": {
+    "target": "http://forever21.lynwhx.com/",
+    "secure":false,
+    "pathRewrite": {
+      "^/api": ""
+    },
+    "changeOrigin": true
   }
 }

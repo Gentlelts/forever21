@@ -9,7 +9,7 @@ axios.interceptors.request.use(config => {
     'Content-Type': 'application/x-www-form-urlencoded ' // 自定义headers
   };
   config.data = qs.stringify(config.data);
-  console.log(config)
+  // console.log(config)
   return config;
 }, error => {
   return Promise.reject(error);

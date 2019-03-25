@@ -30,6 +30,7 @@ import { PersonalCenterPage } from './pages/personal-center/personal-center.page
 import { FooterBannerLightComponent } from './footer-banner-light/footer-banner-light.component';
 import { ReleaseStoryPage } from './pages/release-story/release-story.page';
 import { FileUploadComponent } from './file-upload/file-upload.component';
+import { StoryDetailPage } from './pages/story-detail/story-detail.page';
 
 @NgModule({
   declarations: [
@@ -48,6 +49,7 @@ import { FileUploadComponent } from './file-upload/file-upload.component';
     FooterBannerLightComponent,
     ReleaseStoryPage,
     FileUploadComponent,
+    StoryDetailPage,
   ],
   imports: [
     BrowserModule,
