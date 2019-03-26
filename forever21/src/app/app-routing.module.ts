@@ -20,6 +20,8 @@ const routes: Routes = [
     { path: 'personalCenter', component: PersonalCenterPage },
     { path: 'releaseStory', component: ReleaseStoryPage },
     { path: 'storyDetail/:id', component: StoryDetailPage },
+    { path: 'personalCenter/storyDetail/:id', component: StoryDetailPage },
+    { path: 'story/storyDetail/:id', component: StoryDetailPage },
     // otherwise redirect to home
     { path: '**', redirectTo: '' }
   ];

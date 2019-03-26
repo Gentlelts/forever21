@@ -31,6 +31,7 @@ import { FooterBannerLightComponent } from './footer-banner-light/footer-banner-
 import { ReleaseStoryPage } from './pages/release-story/release-story.page';
 import { FileUploadComponent } from './file-upload/file-upload.component';
 import { StoryDetailPage } from './pages/story-detail/story-detail.page';
+import { StoryCardLargeComponent } from './story-card-large/story-card-large.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import { StoryDetailPage } from './pages/story-detail/story-detail.page';
     ReleaseStoryPage,
     FileUploadComponent,
     StoryDetailPage,
+    StoryCardLargeComponent,
   ],
   imports: [
     BrowserModule,

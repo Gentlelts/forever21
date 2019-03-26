@@ -1,8 +1,49 @@
 <el-container>
-  <el-main>
+  <el-main class="">
     <app-header-banner-dark></app-header-banner-dark>
+    <div class="story-page">
+      <div class="story-page-content">
+        <div class="">
+          <div class="current-modules">
+            <div class="modules-title-wrap">
+              <div class="modules-title">故事集</div>
+            </div>
+            <div class="current-modules-content">
+              <ul class="dis-flex indexPage-ul-one">
+                <li class="m-t-30" *ngFor="let story of storyList">
+                  <a routerLink="storyDetail/{{story._id}}">
+                    <div class="img-wrap-333">
+                      <img class="w-100 h-100 border-radius-5" [src]="apiUrl+story.DocUrl" alt="">
+                    </div>
+                    <div class="p-t-5">
+                      <p></p>
+                      <p class="story-title" style="-webkit-box-orient: vertical;">{{story.Title}}</p>
+                      <p class="f-z-14 m-t-4 story-detail">{{story.Content}}</p>
+                      <div class="dis-flex m-t-2 color-484848">
+                        <div class="f-g-1">
+                          <span class="icon iconfont icon-user story-whois-icon f-z-14 p-r-5"></span>
+                          <span class="o-v-p story-whois">{{story.ArticleID}}</span>
+                        </div>
+                        <div class="f-g-1">
+                          <span class="icon iconfont icon-zuanshi1 f-z-14 p-r-5"></span>
+                          <span>{{story.Like}}</span>
+                        </div>
+                        <div class="f-g-1">
+                          <span class="icon iconfont icon-time f-z-14 p-r-5"></span>
+                          <span>{{story.Time}}</span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </el-main>
-  <el-footer>
+  <el-footer class="">
     <app-footer-banner-light></app-footer-banner-light>
   </el-footer>
 </el-container>
