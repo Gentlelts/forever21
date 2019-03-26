@@ -36,6 +36,22 @@
       line-height: 72px;
       font-size: 16px;
     }
+    .owner-article-list{
+      width: 200px;
+      .ownerArticle-img-wrap{
+        width: 100%;
+        height: 180px;
+      }
+      .article-title{
+        margin-top: 4px;
+        font-size: 18px;
+        font-weight: 800;
+        line-height: 22px;
+      }
+      .article-content{
+        margin-top: 2px;
+      }
+    }
     .qv-icon-box{
       width: 165px;
       height: 154px;
