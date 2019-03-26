@@ -8,7 +8,7 @@
         <!--<span>点赞<br>0</span>-->
       <!--</div>-->
       <div class="t-a-c personal-info">
-        <img src="assets/images/user-default.png" alt="user-default">
+        <img src="http://forever21.oss-cn-shanghai.aliyuncs.com/forever21/user-default.png?Expires=1553596290&OSSAccessKeyId=TMP.AQG3gsmL1TEGuQP73v8rxUukCLyvYg_UkmjjfSzLeKiqeS52axujUeo15zcUADAtAhQlVduxkZ3pc4oeNGioFJZldDbWEQIVANGQ8tLDqhomnVkOa_ew2wvVOUTM&Signature=wfKlV2J%2FTYYCL1Yf1HB%2FC0%2FHVXg%3D" alt="user-default">
         <div class="user-name">
           {{userName}}
         </div>
@@ -26,8 +26,8 @@
     </ul>
     <div class="bg-fff p-t-10 p-b-30 cursor-pointer">
       <div class="">
-        <ul>
-          <li class="owner-article-list" *ngFor="let article of ownerArticleList">
+        <ul class="dis-flex" style="flex-wrap: wrap">
+          <li class="owner-article-list p-r-10 p-l-10" *ngFor="let article of ownerArticleList">
             <a routerLink="storyDetail/{{article._id}}">
               <div class="ownerArticle-img-wrap">
                 <img class="w-100 h-100 border-radius-5" [src]="apiUrl+article.DocUrl" alt="">
@@ -37,6 +37,10 @@
                 <p class="o-v-p article-content">{{article.Content}}</p>
               </div>
             </a>
+          </li>
+          <li class="owner-article-list p-r-10 p-l-10 t-a-m" (click)="releaseStory()">
+            <i nz-icon type="plus"></i>
+            <div class="ant-upload-text">点击上传</div>
           </li>
         </ul>
       </div>
