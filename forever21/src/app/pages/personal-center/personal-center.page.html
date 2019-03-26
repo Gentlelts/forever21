@@ -26,8 +26,8 @@
     </ul>
     <div class="bg-fff p-t-10 p-b-30 cursor-pointer">
       <div class="">
-        <ul>
-          <li class="owner-article-list" *ngFor="let article of ownerArticleList">
+        <ul class="dis-flex" style="flex-wrap: wrap">
+          <li class="owner-article-list p-r-10 p-l-10" *ngFor="let article of ownerArticleList">
             <a routerLink="storyDetail/{{article._id}}">
               <div class="ownerArticle-img-wrap">
                 <img class="w-100 h-100 border-radius-5" [src]="article.DocUrl" alt="">
@@ -37,6 +37,10 @@
                 <p class="o-v-p article-content">{{article.Content}}</p>
               </div>
             </a>
+          </li>
+          <li class="owner-article-list p-r-10 p-l-10 t-a-m" (click)="releaseStory()">
+            <i nz-icon type="plus"></i>
+            <div class="ant-upload-text">点击上传</div>
           </li>
         </ul>
       </div>
