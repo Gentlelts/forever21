@@ -71,12 +71,28 @@
           <div class="current-modules-content">
             <ul class="dis-flex indexPage-ul-two">
               <li class="" *ngFor="let story of latestWorks">
-                <a href="">
+                <a routerLink="storyDetail/{{story._id}}">
                   <div class="">
-                    <img class="w-100 border-radius-5" src="assets/images/story-0.png" alt="">
+                    <img class="w-100 h-100 border-radius-5" [src]="apiUrl+story.DocUrl" alt="">
                   </div>
-                  <div>
-
+                  <div class="p-t-5">
+                    <p></p>
+                    <p class="story-title" style="-webkit-box-orient: vertical;">{{story.Title}}</p>
+                    <p class="f-z-14 m-t-4 story-detail">{{story.Content}}</p>
+                    <div class="dis-flex m-t-2 color-484848">
+                      <div class="f-g-1">
+                        <span class="icon iconfont icon-user story-whois-icon f-z-14 p-r-5"></span>
+                        <span class="o-v-p story-whois">{{story.ArticleName}}</span>
+                      </div>
+                      <div class="f-g-1">
+                        <span class="icon iconfont icon-zuanshi1 f-z-14 p-r-5"></span>
+                        <span>{{story.Like}}</span>
+                      </div>
+                      <div class="f-g-1">
+                        <span class="icon iconfont icon-time f-z-14 p-r-5"></span>
+                        <span>{{story.Time}}</span>
+                      </div>
+                    </div>
                   </div>
                 </a>
               </li>
@@ -130,9 +146,7 @@
                         <span class="o-v-p story-whois">{{story.ArticleID}}</span>
                       </div>
                       <div class="f-g-1">
-                        <span class="icon iconfont icon-zuanshi1 f-z-14 p-r-5"
-                              (click)="likeStory()" [ngClass]="{'like-story':likeThis}"></span>
-                              <!--(click)="likeStory()" [ngClass]="{'like-story':likeThis && }"></span>-->
+                        <span class="icon iconfont icon-zuanshi1 f-z-14 p-r-5"></span>
                         <span>{{story.Like}}</span>
                       </div>
                       <div class="f-g-1">
@@ -143,22 +157,6 @@
                   </div>
                 </a>
               </li>
-              <!--<li class="">-->
-                <!--<a href="">-->
-                  <!--<div class="border-radius-5">-->
-                    <!--<img class="w-100 border-radius-5" src="assets/images/story-1.png" alt="">-->
-                  <!--</div>-->
-                  <!--<div></div>-->
-                <!--</a>-->
-              <!--</li>-->
-              <!--<li class="">-->
-                <!--<a href="">-->
-                  <!--<div class="border-radius-5">-->
-                    <!--<img class="w-100 border-radius-5" src="assets/images/story-2.png" alt="">-->
-                  <!--</div>-->
-                  <!--<div></div>-->
-                <!--</a>-->
-              <!--</li>-->
             </ul>
           </div>
         </div>

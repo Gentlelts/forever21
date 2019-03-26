@@ -49,10 +49,10 @@ export class ReleaseStoryPage implements OnInit {
       DocUrl.push(this.fileList[i].response.data.fileUrl);
     }
     let data = {
+      ArticleName:window.localStorage.getItem('UserName'),
       Title: this.releaseTitle,
       Content: this.releaseContent,
-      DocUrl:DocUrl.toString(),
-      ArticleID:window.localStorage.getItem('UserName')
+      DocUrl:DocUrl.toString()
     };
     foreverHttp.post('/article/publish',data,(response: any) =>{
       if(response.code === 200){

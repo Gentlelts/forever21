@@ -120,7 +120,38 @@
             padding-left: 8px !important;
             padding-right: 8px !important;
             a{
-
+              .story-title{
+                max-width: 333.33px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                font-size: 18px;
+                font-weight: 800;
+                line-height: 22px;
+                max-height: 44px;
+              }
+              .story-detail{
+                max-height: 20px;
+                max-width: 166.67px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+              }
+              .story-whois-icon{
+                display: inline-block;
+                transform: translateY(-2px);
+              }
+              .story-whois{
+                display: inline-block;
+                height: 19px;
+                line-height: 23px;
+                max-width: 75px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+              }
             }
           }
 

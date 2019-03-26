@@ -54,5 +54,29 @@
       "^/api": ""
     },
     "changeOrigin": true
+  },
+  "/article/like": {
+    "target": "http://forever21.lynwhx.com/",
+    "secure":false,
+    "pathRewrite": {
+      "^/api": ""
+    },
+    "changeOrigin": true
+  },
+  "/userInfo/information": {
+    "target": "http://forever21.lynwhx.com/",
+    "secure":false,
+    "pathRewrite": {
+      "^/api": ""
+    },
+    "changeOrigin": true
+  },
+  "/userInfo/userArticle": {
+    "target": "http://forever21.lynwhx.com/",
+    "secure":false,
+    "pathRewrite": {
+      "^/api": ""
+    },
+    "changeOrigin": true
   }
 }

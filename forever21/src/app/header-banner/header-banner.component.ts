@@ -22,6 +22,7 @@ export class HeaderBannerComponent implements OnInit {
   ngOnInit() {
     let UserID = window.localStorage.getItem('UserID');
     this.hasLogin = UserID != null;
+    console.log(this.hasLogin);
   }
 
 }
