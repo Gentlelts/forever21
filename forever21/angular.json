@@ -39,9 +39,7 @@
               "./node_modules/element-angular/theme/index.css",
               "node_modules/ng-zorro-antd/ng-zorro-antd.min.css"
             ],
-            "scripts": [
-              "./src/assets/javascript/JSEncrypt.js"
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {

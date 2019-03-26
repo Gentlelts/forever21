@@ -7,13 +7,13 @@
         <div class="swiper-container">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="assets/images/bg1.png" alt="assets/images/bg1.png">
+              <img src="http://forever21.oss-cn-shanghai.aliyuncs.com/forever21/bg1.png?Expires=1553600499&OSSAccessKeyId=TMP.AQG3gsmL1TEGuQP73v8rxUukCLyvYg_UkmjjfSzLeKiqeS52axujUeo15zcUADAtAhQlVduxkZ3pc4oeNGioFJZldDbWEQIVANGQ8tLDqhomnVkOa_ew2wvVOUTM&Signature=03xd%2BH68quQSmr9Y%2FXU6X0lkLtY%3D" alt="bg1.png">
             </div>
             <div class="swiper-slide">
-              <img src="assets/images/bg2.png" alt="assets/images/bg2.png">
+              <img src="http://forever21.oss-cn-shanghai.aliyuncs.com/forever21/bg2.png?Expires=1553600637&OSSAccessKeyId=TMP.AQG3gsmL1TEGuQP73v8rxUukCLyvYg_UkmjjfSzLeKiqeS52axujUeo15zcUADAtAhQlVduxkZ3pc4oeNGioFJZldDbWEQIVANGQ8tLDqhomnVkOa_ew2wvVOUTM&Signature=lC1B1I7qDkFSqVYVvPqbNKQj7tM%3D" alt="bg2.png">
             </div>
             <div class="swiper-slide">
-              <img src="assets/images/stars.png" alt="assets/images/stars.png">
+              <img src="http://forever21.oss-cn-shanghai.aliyuncs.com/forever21/stars.png?Expires=1553600895&OSSAccessKeyId=TMP.AQG3gsmL1TEGuQP73v8rxUukCLyvYg_UkmjjfSzLeKiqeS52axujUeo15zcUADAtAhQlVduxkZ3pc4oeNGioFJZldDbWEQIVANGQ8tLDqhomnVkOa_ew2wvVOUTM&Signature=n5QTw%2Ff0YcVqE0fv%2FrHOuglhuCI%3D" alt="stars.png">
             </div>
           </div>
         </div>
@@ -36,7 +36,7 @@
               <li class="">
                 <a href="">
                   <div class="">
-                    <img class="w-100 border-radius-5" src="assets/images/current-modules-1.jpg" alt="">
+                    <img class="w-100 border-radius-5" src="http://forever21.oss-cn-shanghai.aliyuncs.com/forever21/current-modules-1.jpg?Expires=1553600791&OSSAccessKeyId=TMP.AQG3gsmL1TEGuQP73v8rxUukCLyvYg_UkmjjfSzLeKiqeS52axujUeo15zcUADAtAhQlVduxkZ3pc4oeNGioFJZldDbWEQIVANGQ8tLDqhomnVkOa_ew2wvVOUTM&Signature=KFqcCRpfsg%2B%2FYm5kKV2KSf3S7fA%3D" alt="">
                   </div>
                   <div>
 
@@ -46,7 +46,7 @@
               <li class="">
                 <a href="">
                   <div class="border-radius-5">
-                    <img class="w-100 border-radius-5" src="assets/images/current-modules-2.jpg" alt="">
+                    <img class="w-100 border-radius-5" src="http://forever21.oss-cn-shanghai.aliyuncs.com/forever21/current-modules-2.jpg?Expires=1553600814&OSSAccessKeyId=TMP.AQG3gsmL1TEGuQP73v8rxUukCLyvYg_UkmjjfSzLeKiqeS52axujUeo15zcUADAtAhQlVduxkZ3pc4oeNGioFJZldDbWEQIVANGQ8tLDqhomnVkOa_ew2wvVOUTM&Signature=6e6qmmEIt2PLfwWzJawpq4oGMjg%3D" alt="">
                   </div>
                   <div></div>
                 </a>
@@ -54,7 +54,7 @@
               <li class="">
                 <a href="">
                   <div class="border-radius-5">
-                    <img class="w-100 border-radius-5" src="assets/images/current-modules-3.jpg" alt="">
+                    <img class="w-100 border-radius-5" src="http://forever21.oss-cn-shanghai.aliyuncs.com/forever21/current-modules-3.jpg?Expires=1553600824&OSSAccessKeyId=TMP.AQG3gsmL1TEGuQP73v8rxUukCLyvYg_UkmjjfSzLeKiqeS52axujUeo15zcUADAtAhQlVduxkZ3pc4oeNGioFJZldDbWEQIVANGQ8tLDqhomnVkOa_ew2wvVOUTM&Signature=pdV9oH5s3Z9meJXk3W%2B9x%2F8QuWs%3D" alt="">
                   </div>
                   <div></div>
                 </a>
@@ -73,7 +73,7 @@
               <li class="" *ngFor="let story of latestWorks">
                 <a routerLink="storyDetail/{{story._id}}">
                   <div class="">
-                    <img class="w-100 h-100 border-radius-5" [src]="apiUrl+story.DocUrl" alt="">
+                    <img class="w-100 h-100 border-radius-5" [src]="story.DocUrl" alt="">
                   </div>
                   <div class="p-t-5">
                     <p></p>
@@ -96,30 +96,6 @@
                   </div>
                 </a>
               </li>
-              <!--<li class="">-->
-                <!--<a href="">-->
-                  <!--<div class="border-radius-5">-->
-                    <!--<img class="w-100 border-radius-5" src="assets/images/story-1.png" alt="">-->
-                  <!--</div>-->
-                  <!--<div></div>-->
-                <!--</a>-->
-              <!--</li>-->
-              <!--<li class="">-->
-                <!--<a href="">-->
-                  <!--<div class="border-radius-5">-->
-                    <!--<img class="w-100 border-radius-5" src="assets/images/story-2.png" alt="">-->
-                  <!--</div>-->
-                  <!--<div></div>-->
-                <!--</a>-->
-              <!--</li>-->
-              <!--<li class="">-->
-                <!--<a href="">-->
-                  <!--<div class="border-radius-5">-->
-                    <!--<img class="w-100 border-radius-5" src="assets/images/story-3.png" alt="">-->
-                  <!--</div>-->
-                  <!--<div></div>-->
-                <!--</a>-->
-              <!--</li>-->
             </ul>
           </div>
         </div>
@@ -134,7 +110,7 @@
               <li class="" *ngFor="let story of rankingList">
                 <a routerLink="storyDetail/{{story._id}}">
                   <div class="img-wrap-333">
-                    <img class="w-100 h-100 border-radius-5" [src]="apiUrl+story.DocUrl" alt="">
+                    <img class="w-100 h-100 border-radius-5" [src]="story.DocUrl" alt="">
                   </div>
                   <div class="p-t-5">
                     <p></p>

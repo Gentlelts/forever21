@@ -13,7 +13,7 @@
                 <li class="m-t-30" *ngFor="let story of storyList">
                   <a routerLink="storyDetail/{{story._id}}">
                     <div class="img-wrap-333">
-                      <img class="w-100 h-100 border-radius-5" [src]="apiUrl+story.DocUrl" alt="">
+                      <img class="w-100 h-100 border-radius-5" [src]="story.DocUrl" alt="">
                     </div>
                     <div class="p-t-5">
                       <p></p>
