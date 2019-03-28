@@ -24,7 +24,7 @@
       <li class="p-r-20">作品/故事</li>
       <!--<li class="">收到的赞 (200)</li>-->
     </ul>
-    <div class="bg-fff p-t-10 p-b-30 cursor-pointer">
+    <div *ngIf="showArticleList" class="bg-fff p-t-10 p-b-30 cursor-pointer">
       <div class="">
         <ul class="dis-flex" style="flex-wrap: wrap">
           <li class="owner-article-list p-r-10 p-l-10" *ngFor="let article of ownerArticleList">
@@ -39,8 +39,10 @@
             </a>
           </li>
           <li class="owner-article-list p-r-10 p-l-10 t-a-m" (click)="releaseStory()">
-            <i nz-icon type="plus"></i>
-            <div class="ant-upload-text">点击上传</div>
+            <div class="t-a-m border-radius-5 go-upload-page">
+              <i nz-icon type="plus"></i>
+              <div class="ant-upload-text">点击上传</div>
+            </div>
           </li>
         </ul>
       </div>
