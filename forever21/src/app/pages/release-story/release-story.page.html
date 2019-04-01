@@ -18,7 +18,17 @@
             <span>标题</span>
           </div>
           <div class="">
-            <el-input [(model)]="releaseTitle" placeholder="请输入标题……（10-50字）"></el-input>
+            <el-input [(model)]="releaseTitle" placeholder="请输入故事/作品标题……（10-50字）"></el-input>
+          </div>
+        </li>
+        <li class="release-story-item">
+          <div class="release-story-title">
+            <span>分类</span>
+          </div>
+          <div class="">
+            <ul *ngFor="let tag of storyTags">
+              <li class="color-484848">{{tag.name}}</li>
+            </ul>
           </div>
         </li>
         <li class="release-story-item">
@@ -26,11 +36,9 @@
             <span>内容</span>
           </div>
           <div class="">
-            <el-input type="textarea" style="height: 200px;"
-                      [autosize]="{ minRows: 2, maxRows: 10}"
-                      placeholder="请输入内容……"
-                      [(model)]="releaseContent">
-            </el-input>
+            <label>
+              <textarea rows="10" style="height: 220px;max-height: 220px;min-height: 220px" [maxlength]="2000" nz-input [(ngModel)]="releaseContent"></textarea>
+            </label>
           </div>
         </li>
         <li class="release-story-item">

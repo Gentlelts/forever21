@@ -13,6 +13,12 @@ export class PersonalCenterPage implements OnInit {
   showArticleList = false;// 显示故事列表与上传故事
   hiddenArticleList = false;// 显示上传故事
   ownerArticleList:any = [];
+  storyTags=[
+    {id:'0',name:'故事'},
+    {id:'1',name:'人物'},
+    {id:'2',name:'风景'}
+  ];
+  emptyWords = '暂时还没有点赞噢~快去上传作品吧~';
   constructor(
     private router: Router
   ) {
