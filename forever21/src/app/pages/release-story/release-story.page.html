@@ -26,8 +26,12 @@
             <span>分类</span>
           </div>
           <div class="">
-            <ul *ngFor="let tag of storyTags">
-              <li class="color-484848">{{tag.name}}</li>
+            <ul class="dis-flex">
+              <li class="color-484848 story-sort"
+                  *ngFor="let storyTag of storyTags"
+                  [ngClass]="{'choose-this':storyTag.choose && storyTag.id}"
+                  (click)="chooseSort(storyTag)"
+              >{{storyTag.name}}</li>
             </ul>
           </div>
         </li>

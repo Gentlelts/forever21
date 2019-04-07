@@ -12,6 +12,24 @@ export class ReleaseStoryPage implements OnInit {
   previewVisible = false;
   releaseTitle = '';
   releaseContent = '';
+  storyTags: any = [
+    {
+      id:1,
+      name: "故事",
+      choose:false
+    },
+    {
+      id:2,
+      name: "人物",
+      choose:false
+    },
+    {
+      id:3,
+      name: "风景",
+      choose:false
+    }
+  ];
+  storyTagList = [];
   constructor(
     private message: ElMessageService
   ) { }
@@ -26,6 +44,25 @@ export class ReleaseStoryPage implements OnInit {
   handlePreview = (file: UploadFile) => {
     this.previewImage = file.url || file.thumbUrl;
     this.previewVisible = true;
+  }
+
+  chooseSort(e){
+    console.log(e)
+    e.choose = !e.choose;
+    if(this.storyTagList.length===0){
+      this.storyTagList.push(e.name);
+    } else {
+      for (let i = 0; i < this.storyTagList.length; i++) {
+        if(e.name === this.storyTagList[i]){
+          this.storyTagList.splice(i,1);
+        } else {
+          this.storyTagList.push(e.name);
+          console.log(this.storyTagList);
+        }
+      }
+    }
+    // console.log(this.storyTagList);
+    // console.log(JSON.stringify(this.storyTagList));
   }
 
   // 上传文件结束
