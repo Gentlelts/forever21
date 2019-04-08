@@ -12,8 +12,9 @@ export class PersonalCenterPage implements OnInit {
   userName = '';
   showArticleList = false;// 显示故事列表与上传故事
   hiddenArticleList = false;// 显示上传故事
-  ownerArticleList: any = [];
-  emptyWords = '暂时还没有点赞噢~快去上传作品吧~';
+  ownerArticleList: any = [];// 个人中心作品列表
+  likeArticleList: any = [];// 个人中心点赞作品列表
+  emptyWords = '暂时还没有作品被点赞噢~';
 
   constructor(
     private router: Router
@@ -46,7 +47,12 @@ export class PersonalCenterPage implements OnInit {
           response.data[i].DocUrl = response.data[i].DocUrl[0];
         }
         this.ownerArticleList = response.data;
-        console.log(this.ownerArticleList);
+        this.likeArticleList = [];
+        for (let j = 0; j < this.ownerArticleList.length; j++) {
+          if(this.ownerArticleList[j].Like > 0){
+            this.likeArticleList.push(this.ownerArticleList[j]);
+          }
+        }
         if (response.data.length > 0) {
           this.showArticleList = true;
         } else {

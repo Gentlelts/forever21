@@ -79,7 +79,7 @@
                   </div>
                 </a>
               </li>
-              <li class="owner-article-list p-r-10 p-l-10 t-a-m" (click)="releaseStory()">
+              <li class="owner-article-list p-r-10 p-l-10 t-a-m m-t-30" (click)="releaseStory()">
                 <div class="t-a-m border-radius-5 go-upload-page">
                   <i nz-icon type="plus"></i>
                   <div class="ant-upload-text">点击上传</div>
@@ -106,8 +106,23 @@
             </i>
             收到的赞 (200)
           </ng-template>
-
-        <div class="bg-fff p-t-10 p-b-30">
+        <div class="bg-fff p-t-10 p-b-30" *ngIf="likeArticleList.length > 0">
+          <ul class="dis-flex flex-wrap-wrap">
+            <li class="owner-article-list p-r-10 p-l-10" *ngFor="let article of likeArticleList">
+              <a routerLink="storyDetail/{{article._id}}">
+                <div class="ownerArticle-img-wrap po-si-re">
+                  <img class="w-100 h-100 border-radius-5" [src]="article.DocUrl" alt="">
+                  <span class="article-like"><i nz-icon type="like" theme="outline"></i>{{article.Like}}</span>
+                </div>
+                <div class="">
+                  <p class="o-v-p article-title">{{article.Title}}</p>
+                  <p class="o-v-p article-content">{{article.Content}}</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="bg-fff p-t-10 p-b-30" *ngIf="likeArticleList.length <= 0">
           <nz-empty [nzNotFoundContent]="emptyWords"></nz-empty>
         </div>
       </nz-tab>

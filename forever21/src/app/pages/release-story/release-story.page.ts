@@ -16,16 +16,19 @@ export class ReleaseStoryPage implements OnInit {
     {
       id:1,
       name: "故事",
+      tag: "Story",
       choose:false
     },
     {
       id:2,
       name: "人物",
+      tag: "Character",
       choose:false
     },
     {
       id:3,
       name: "风景",
+      tag: "Landscape",
       choose:false
     }
   ];
@@ -49,20 +52,12 @@ export class ReleaseStoryPage implements OnInit {
   chooseSort(e){
     console.log(e)
     e.choose = !e.choose;
-    if(this.storyTagList.length===0){
-      this.storyTagList.push(e.name);
-    } else {
-      for (let i = 0; i < this.storyTagList.length; i++) {
-        if(e.name === this.storyTagList[i]){
-          this.storyTagList.splice(i,1);
-        } else {
-          this.storyTagList.push(e.name);
-          console.log(this.storyTagList);
-        }
+    this.storyTagList = [];
+    for (let i = 0; i < this.storyTags.length; i++) {
+      if(this.storyTags[i].choose){
+        this.storyTagList.push(this.storyTags[i].tag);
       }
     }
-    // console.log(this.storyTagList);
-    // console.log(JSON.stringify(this.storyTagList));
   }
 
   // 上传文件结束
@@ -86,7 +81,9 @@ export class ReleaseStoryPage implements OnInit {
       DocUrl.push(this.fileList[i].response.data.fileUrl);
     }
     let data = {
+      ArticleID:window.localStorage.getItem('UserID'),
       ArticleName:window.localStorage.getItem('UserName'),
+      tag:this.storyTagList.toString(),
       Title: this.releaseTitle,
       Content: this.releaseContent,
       DocUrl:DocUrl.toString()
