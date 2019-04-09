@@ -53,6 +53,15 @@
       .ownerArticle-img-wrap{
         width: 100%;
         height: 180px;
+        .article-like{
+          position: absolute;
+          right: 10px;
+          top: 10px;
+          font-size: 16px;
+          color: #f73f51;
+          background: #fff;
+          border-radius: 5px;
+        }
       }
       .article-title{
         margin-top: 4px;

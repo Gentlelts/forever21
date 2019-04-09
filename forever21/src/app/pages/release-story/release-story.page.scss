@@ -29,6 +29,22 @@
             margin-bottom: 8px;
             color: #24292e;
           }
+          .story-sort{
+            cursor: pointer;
+            margin: 0 15px;
+            width: 80px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+          }
+          .choose-this{
+            border: 1px solid #409EFF;
+            box-shadow: 0 0 0 2px rgba(24,144,255,.2);
+            color: #409EFF;
+            font-weight: 600;
+          }
         }
       }
       .release-story-btn{

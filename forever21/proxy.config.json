@@ -2,81 +2,51 @@
   "/loginRegister/login": {
     "target": "http://forever21.lynwhx.com/",
     "secure":false,
-    "pathRewrite": {
-      "^/api": ""
-    },
     "changeOrigin": true
   },
   "/loginRegister/register": {
     "target": "http://forever21.lynwhx.com/",
     "secure":false,
-    "pathRewrite": {
-      "^/api": ""
-    },
     "changeOrigin": true
   },
   "/loginRegister/encrypt": {
     "target": "http://forever21.lynwhx.com/",
     "secure":false,
-    "pathRewrite": {
-      "^/api": ""
-    },
     "changeOrigin": true
   },
   "/article/list": {
     "target": "http://forever21.lynwhx.com/",
     "secure":false,
-    "pathRewrite": {
-      "^/api": ""
-    },
     "changeOrigin": true
   },
   "/article/uploadImg": {
     "target": "http://forever21.lynwhx.com/",
     "secure":false,
-    "pathRewrite": {
-      "^/api": ""
-    },
     "changeOrigin": true
   },
   "/article/publish": {
     "target": "http://forever21.lynwhx.com/",
     "secure":false,
-    "pathRewrite": {
-      "^/api": ""
-    },
     "changeOrigin": true
   },
   "/article/details": {
     "target": "http://forever21.lynwhx.com/",
     "secure":false,
-    "pathRewrite": {
-      "^/api": ""
-    },
     "changeOrigin": true
   },
   "/article/like": {
     "target": "http://forever21.lynwhx.com/",
     "secure":false,
-    "pathRewrite": {
-      "^/api": ""
-    },
     "changeOrigin": true
   },
   "/userInfo/information": {
     "target": "http://forever21.lynwhx.com/",
     "secure":false,
-    "pathRewrite": {
-      "^/api": ""
-    },
     "changeOrigin": true
   },
   "/userInfo/userArticle": {
     "target": "http://forever21.lynwhx.com/",
     "secure":false,
-    "pathRewrite": {
-      "^/api": ""
-    },
     "changeOrigin": true
   }
 }
