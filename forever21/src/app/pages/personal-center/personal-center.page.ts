@@ -4,7 +4,6 @@ import {foreverHttp} from '../../../environments/axiosHttp';
 import {environment} from '../../../environments/environment';
 @Component({
   templateUrl: './personal-center.page.html',
-
   styleUrls: ['./personal-center.page.scss']
 })
 export class PersonalCenterPage implements OnInit {

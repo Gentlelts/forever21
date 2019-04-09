@@ -31,6 +31,23 @@
   .personal-center-content{
     width: 1024px;
     margin: 0 auto;
+    .edit-personal-info{
+      position: absolute;
+      right: 8px;
+      top: 15px;
+      font-size: 18px;
+      color: #1890ff;
+    }
+    .personal-info-detail{
+      li{
+        display: flex;
+        .download-svg-size{
+          width: 18px;
+          height: 18px;
+          transform: translateY(2px);
+        }
+      }
+    }
     .owner-article-list{
       width: 200px;
       .ownerArticle-img-wrap{
@@ -67,6 +84,9 @@
       color: rgba(96,98,102,.65);
       text-align: center;
       margin-bottom: 30px;
+    }
+    .story-empty-wrap{
+      height: 230px;
     }
   }
 }
