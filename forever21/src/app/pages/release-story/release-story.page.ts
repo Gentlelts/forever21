@@ -50,7 +50,6 @@ export class ReleaseStoryPage implements OnInit {
   }
 
   chooseSort(e){
-    console.log(e)
     e.choose = !e.choose;
     this.storyTagList = [];
     for (let i = 0; i < this.storyTags.length; i++) {

@@ -19,6 +19,11 @@
     "secure":false,
     "changeOrigin": true
   },
+  "/article/tagList": {
+    "target": "http://forever21.lynwhx.com/",
+    "secure":false,
+    "changeOrigin": true
+  },
   "/article/uploadImg": {
     "target": "http://forever21.lynwhx.com/",
     "secure":false,

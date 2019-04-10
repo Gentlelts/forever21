@@ -73,6 +73,16 @@
             padding-left: 8px;
             padding-right: 8px;
             a{
+              .discover-forever{
+                position: absolute;
+                bottom: 0;
+                background: rgba(0, 0, 0, 0.7);
+                padding: 5px 10px;
+                color: #fff;
+                width: 100%;
+                border-radius: 0 0 6px 6px;
+                text-align: center;
+              }
               .img-wrap-333{
                 width: 333.33px!important;
                 height: 224.7px!important;

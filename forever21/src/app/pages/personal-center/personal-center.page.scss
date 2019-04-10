@@ -37,6 +37,7 @@
       top: 15px;
       font-size: 18px;
       color: #1890ff;
+      z-index: 10;
     }
     .personal-info-detail{
       li{
@@ -97,5 +98,11 @@
     .story-empty-wrap{
       height: 230px;
     }
+  }
+  .ant-cascader-picker {
+    width: 300px;
+  }
+  nz-date-picker{
+    margin: 0 8px 12px 0;
   }
 }

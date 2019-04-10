@@ -32,6 +32,7 @@ import { ReleaseStoryPage } from './pages/release-story/release-story.page';
 import { FileUploadComponent } from './file-upload/file-upload.component';
 import { StoryDetailPage } from './pages/story-detail/story-detail.page';
 import { StoryCardLargeComponent } from './story-card-large/story-card-large.component';
+import { StorySortPage } from './pages/story-sort/story-sort.page';
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import { StoryCardLargeComponent } from './story-card-large/story-card-large.com
     FileUploadComponent,
     StoryDetailPage,
     StoryCardLargeComponent,
+    StorySortPage,
   ],
   imports: [
     BrowserModule,

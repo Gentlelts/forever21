@@ -11,6 +11,9 @@ export class IndexPage implements OnInit {
   public apiUrl= `${environment.url}`;
   latestWorks = [];// 最新作品
   rankingList = [];// 榜单作品Time
+  Landscape = "Landscape";
+  Character = "Character";
+  Story = "Story";
   constructor() {}
   // 对数据根据点赞数排序
   static sortLikeArray(likeArray){

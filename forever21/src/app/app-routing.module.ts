@@ -9,6 +9,7 @@ import { StoryPage } from './pages/story/story.page';
 import { PersonalCenterPage } from './pages/personal-center/personal-center.page';
 import { ReleaseStoryPage } from './pages/release-story/release-story.page';
 import { StoryDetailPage } from './pages/story-detail/story-detail.page';
+import { StorySortPage } from './pages/story-sort/story-sort.page';
 
 const routes: Routes = [
     { path: '', component: IndexPage },
@@ -22,6 +23,7 @@ const routes: Routes = [
     { path: 'storyDetail/:id', component: StoryDetailPage },
     { path: 'personalCenter/storyDetail/:id', component: StoryDetailPage },
     { path: 'story/storyDetail/:id', component: StoryDetailPage },
+    { path: 'storySort/:id', component: StorySortPage },
     // otherwise redirect to home
     { path: '**', redirectTo: '' }
   ];
