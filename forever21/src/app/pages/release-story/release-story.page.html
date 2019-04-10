@@ -29,7 +29,7 @@
             <ul class="dis-flex">
               <li class="color-484848 story-sort"
                   *ngFor="let storyTag of storyTags"
-                  [ngClass]="{'choose-this':storyTag.choose && storyTag.id}"
+                  [ngClass]="{'choose-this':storyTag.choose}"
                   (click)="chooseSort(storyTag)"
               >{{storyTag.name}}</li>
             </ul>

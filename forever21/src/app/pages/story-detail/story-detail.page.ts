@@ -45,10 +45,11 @@ export class StoryDetailPage implements OnInit {
     });
     foreverHttp.post('/article/like',data,(response:any) =>{
       if (response.code === 200) {
-        console.log(response.data);
         this.likeThis = true;
         this.storyInfo.Like = this.storyInfo.Like + 1;
         this.showMsg('success','点赞成功~');
+      }else{
+        this.showMsg('warning',response.msg);
       }
     });
   }

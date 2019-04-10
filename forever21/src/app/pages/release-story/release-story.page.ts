@@ -12,26 +12,7 @@ export class ReleaseStoryPage implements OnInit {
   previewVisible = false;
   releaseTitle = '';
   releaseContent = '';
-  storyTags: any = [
-    {
-      id:1,
-      name: "故事",
-      tag: "Story",
-      choose:false
-    },
-    {
-      id:2,
-      name: "人物",
-      tag: "Character",
-      choose:false
-    },
-    {
-      id:3,
-      name: "风景",
-      tag: "Landscape",
-      choose:false
-    }
-  ];
+  storyTags: any = [];
   storyTagList = [];
   constructor(
     private message: ElMessageService
@@ -50,6 +31,7 @@ export class ReleaseStoryPage implements OnInit {
   }
 
   chooseSort(e){
+    console.log(e)
     e.choose = !e.choose;
     this.storyTagList = [];
     for (let i = 0; i < this.storyTags.length; i++) {
@@ -102,6 +84,16 @@ export class ReleaseStoryPage implements OnInit {
     this.message.setOptions({showClose: true});
     this.message[type](msg);
   }
+  //获取标签
+  getTags(){
+    foreverHttp.get('/article/tagList',{},(response: any) =>{
+      if(response.code === 200){
+        console.log(response)
+        this.storyTags = response.data;
+      }
+    });
+  }
   ngOnInit() {
+    this.getTags();
   }
 }
