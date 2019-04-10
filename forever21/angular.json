@@ -37,7 +37,7 @@
             "styles": [
               "src/styles.scss",
               "./node_modules/element-angular/theme/index.css",
-              "./node_modules/_ng-zorro-antd@7.2.0@ng-zorro-antd/ng-zorro-antd.min.css"
+              "node_modules/ng-zorro-antd/ng-zorro-antd.min.css"
             ],
             "scripts": []
           },

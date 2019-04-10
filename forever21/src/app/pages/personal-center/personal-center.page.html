@@ -111,7 +111,8 @@
                 <span *ngIf="userInfo.Birthday === undefined">暂时未设置生日</span>
               </div>
               <div class="" *ngIf="editInfo">
-                <nz-date-picker [(ngModel)]="date" (ngModelChange)="onChange($event)"></nz-date-picker>
+                <nz-date-picker [(ngModel)]="userInfo.Birthday"
+                                (ngModelChange)="onChange($event)"></nz-date-picker>
               </div>
             </li>
             <li class="l-h-40 border-bottom-eee p-t-10 p-b-10">
@@ -152,6 +153,12 @@
               </div>
               <div class="" *ngIf="editInfo">
                 <input nz-input placeholder="Basic usage" [(ngModel)]="userInfo.Hobby" />
+              </div>
+            </li>
+            <li class="l-h-40 p-t-10 p-b-10" *ngIf="editInfo">
+              <div class="t-a-m">
+                <span class="p-t-5 p-b-5 p-r-20 p-l-20 color-fff bg-409eff border-radius-5"
+                      (click)="saveUserInfo()">保存</span>
               </div>
             </li>
           </ul>

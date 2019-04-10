@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
 import {foreverHttp} from '../../../environments/axiosHttp';
+import {format} from 'date-fns';
 
 @Component({
   templateUrl: './personal-center.page.html',
@@ -71,7 +72,6 @@ export class PersonalCenterPage implements OnInit {
     foreverHttp.post('/userInfo/information', data, (res: any) => {
       if (res.code === 200) {
         this.userInfo = res.data;
-        console.log(this.userInfo.Birthday);
       }
     });
   }
@@ -118,6 +118,17 @@ export class PersonalCenterPage implements OnInit {
   // 修改日期
   onChange(result: Date): void {
     console.log('onChange: ', result);
+  }
+
+  saveUserInfo(){
+    let aaa = format(new Date(), 'MM/DD/YYYY')
+    console.log(aaa);
+    console.log(this.userInfo);
+    // foreverHttp.post('/userInfo/updateInformation', this.userInfo, (res: any) => {
+    //   if (res.code === 200) {
+    //     this.userInfo = res.data;
+    //   }
+    // });
   }
 
   ngOnInit() {
