@@ -11,7 +11,10 @@ export class StoryPage implements OnInit {
   constructor() { }
 
   getStoryList(){
-    foreverHttp.get('/article/list',{},(response:any) =>{
+    let data = {
+      tags:''
+    };
+    foreverHttp.get('/article/list',data,(response:any) =>{
       if (response.code === 200) {
         for (let i = 0; i < response.data.length; i++) {
           response.data[i].DocUrl = response.data[i].DocUrl.split(',');

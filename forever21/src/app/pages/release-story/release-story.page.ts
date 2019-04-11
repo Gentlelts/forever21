@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {Router} from "@angular/router";
 import {ElMessageService} from "element-angular";
 import {UploadFile} from "ng-zorro-antd";
 import {foreverHttp} from "../../../environments/axiosHttp";
@@ -30,8 +29,8 @@ export class ReleaseStoryPage implements OnInit {
     this.previewVisible = true;
   }
 
+
   chooseSort(e){
-    console.log(e)
     e.choose = !e.choose;
     this.storyTagList = [];
     for (let i = 0; i < this.storyTags.length; i++) {
@@ -84,12 +83,15 @@ export class ReleaseStoryPage implements OnInit {
     this.message.setOptions({showClose: true});
     this.message[type](msg);
   }
-  //获取标签
+  // 获取标签
   getTags(){
     foreverHttp.get('/article/tagList',{},(response: any) =>{
       if(response.code === 200){
-        console.log(response)
         this.storyTags = response.data;
+        for (let i = 0; i < this.storyTags.length; i++) {
+          this.storyTags[i].choose =false;
+        }
+        console.log(this.storyTags);
       }
     });
   }

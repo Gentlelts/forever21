@@ -9,6 +9,17 @@ import {environment} from "../../../environments/environment";
 
 export class IndexPage implements OnInit {
   public apiUrl= `${environment.url}`;
+  imgLists = [
+    {
+      src:'https://forever21-1253218036.cos.ap-shanghai.myqcloud.com/template/bg1.png'
+    },
+    {
+      src:'https://forever21-1253218036.cos.ap-shanghai.myqcloud.com/template/bg2.png'
+    },
+    {
+      src:'https://forever21-1253218036.cos.ap-shanghai.myqcloud.com/template/stars.png'
+    },
+  ];// 最新作品
   latestWorks = [];// 最新作品
   rankingList = [];// 榜单作品Time
   Landscape = "Landscape";
@@ -22,7 +33,10 @@ export class IndexPage implements OnInit {
     });
   }
   getStoryList(){
-    foreverHttp.get('/article/list',{},(response:any) =>{
+    let data = {
+      tags:''
+    };
+    foreverHttp.get('/article/list',data,(response:any) =>{
       if (response.code === 200) {
         for (let i = 0; i < response.data.length; i++) {
           response.data[i].DocUrl = response.data[i].DocUrl.split(',');

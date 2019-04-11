@@ -4,19 +4,25 @@
       <app-header-banner></app-header-banner>
       <div class="_ro4v2s">
         <div class="_1bkpw4e"></div>
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="https://forever21-1253218036.cos.ap-shanghai.myqcloud.com/template/bg1.png" alt="bg1.png">
-            </div>
-            <div class="swiper-slide">
-              <img src="https://forever21-1253218036.cos.ap-shanghai.myqcloud.com/template/bg2.png" alt="bg2.png">
-            </div>
-            <div class="swiper-slide">
-              <img src="https://forever21-1253218036.cos.ap-shanghai.myqcloud.com/template/stars.png" alt="stars.png">
-            </div>
-          </div>
-        </div>
+        <!--<div class="swiper-container">-->
+          <!--<div class="swiper-wrapper">-->
+            <!--<div class="swiper-slide">-->
+              <!--<img src="https://forever21-1253218036.cos.ap-shanghai.myqcloud.com/template/bg1.png" alt="bg1.png">-->
+            <!--</div>-->
+            <!--<div class="swiper-slide">-->
+              <!--<img src="https://forever21-1253218036.cos.ap-shanghai.myqcloud.com/template/bg2.png" alt="bg2.png">-->
+            <!--</div>-->
+            <!--<div class="swiper-slide">-->
+              <!--<img src="https://forever21-1253218036.cos.ap-shanghai.myqcloud.com/template/stars.png" alt="stars.png">-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</div>-->
+        <el-carousel height="480px" autoplay="true" interval="2000">
+          <el-carousel-item *ngFor="let item of imgLists">
+              <img [src]="item.src" alt="stars.png">
+          </el-carousel-item>
+        </el-carousel>
+
         <div class="home-slogan-left">
           在这里见证永恒的爱
         </div>
@@ -126,7 +132,7 @@
                     <div class="dis-flex m-t-2 color-484848">
                       <div class="f-g-1">
                         <span class="icon iconfont icon-user story-whois-icon f-z-14 p-r-5"></span>
-                        <span class="o-v-p story-whois">{{story.ArticleID}}</span>
+                        <span class="o-v-p story-whois">{{story.ArticleName}}</span>
                       </div>
                       <div class="f-g-1">
                         <span class="icon iconfont icon-zuanshi1 f-z-14 p-r-5"></span>

@@ -8,22 +8,31 @@
           <li class="dis-flex">
             <div class="p-t-20 p-b-20 f-g-1">
               <div class="p-t-10 p-b-15">
-                <input class="w-100 registered-page-userName color-fff" [(ngModel)]="userName" name="userName"
-                       type="text" title="UserName" placeholder="UserName">
+                <input class="w-100 registered-page-userName color-fff" [(ngModel)]="userName" name="UserName"
+                       type="text" title="Please enter a nickname" (blur)="regBlur('userName')" maxlength="8" placeholder="请输入昵称">
               </div>
               <div class="p-t-15 p-b-10">
-                <input class="w-100 registered-page-password color-fff" [(ngModel)]="passWord" name="passWord"
-                       type="password" title="PassWord" placeholder="PassWord">
+                <input class="w-100 registered-page-password color-fff" maxlength="20" [(ngModel)]="passWord" name="PassWord"
+                       type="password" title="Please enter your password" (blur)="regBlur('passWord')" placeholder="请输入密码">
               </div>
               <div class="p-t-15 p-b-10">
-                <input class="w-100 registered-page-password color-fff" [(ngModel)]="passWord" name="passWord"
-                       type="password" title="PassWord" placeholder="">
+                <input class="w-100 registered-page-password color-fff" maxlength="20" [(ngModel)]="passWordConfirm" name="passWordConfirm"
+                       type="password" title="Please enter your password again" (blur)="regBlur('passWordConfirm')" placeholder="请再次输入密码">
+              </div>
+              <div class="p-t-15 p-b-10 dis-flex">
+                <div class="p-r-10 f-g-1">
+                  <input class="w-100 registered-page-password color-fff" maxlength="4" [(ngModel)]="code" name="code" (blur)="regBlur('code')"
+                         type="text" title="Please enter the verification code in the picture on the right" placeholder="请输右侧图中验证码">
+                </div>
+                <div class="bg-fff" style="width: 110px;">
+                  <img style="padding: 5px 4px;" src="http://forever21.lynwhx.com/loginRegister/imgCode" alt="">
+                </div>
               </div>
             </div>
           </li>
           <li class="justify-content-center dis-flex">
-            <div class="color-fff registered-btn h-40 l-h-40 po-si-re" (click)="Registered()">
-              Register
+            <div class="color-fff registered-btn h-40 l-h-40 po-si-re" (click)="Registered()" title="Register">
+              注册
             </div>
           </li>
           <li class="t-a-c m-t-10">

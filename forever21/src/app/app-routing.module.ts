@@ -21,9 +21,12 @@ const routes: Routes = [
     { path: 'personalCenter', component: PersonalCenterPage },
     { path: 'releaseStory', component: ReleaseStoryPage },
     { path: 'storyDetail/:id', component: StoryDetailPage },
-    { path: 'personalCenter/storyDetail/:id', component: StoryDetailPage },
-    { path: 'story/storyDetail/:id', component: StoryDetailPage },
+    { path: 'personalCenter/storyDetail/:id', component: StoryDetailPage },// 个人中心页进详情
+    { path: 'story/storyDetail/:id', component: StoryDetailPage },// 故事列表页进详情
     { path: 'storySort/:id', component: StorySortPage },
+    { path: 'storySort/Landscape/storyDetail/:id', component: StoryDetailPage },// 标签页进详情
+    { path: 'storySort/Character/storyDetail/:id', component: StoryDetailPage },
+    { path: 'storySort/Story/storyDetail/:id', component: StoryDetailPage },
     // otherwise redirect to home
     { path: '**', redirectTo: '' }
   ];

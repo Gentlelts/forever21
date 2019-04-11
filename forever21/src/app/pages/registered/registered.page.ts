@@ -19,12 +19,54 @@ export class RegisteredPage implements OnInit {
 
   userName = '';
   passWord = '';
-
+  passWordConfirm = '';
+  code = '';
+  regBlur(e){
+    if(e === 'userName'){
+      if(this.userName.length <= 0 || this.userName.length > 8){
+        this.showMsg('warning', '请注意昵称长度');
+      }
+    }
+    if(e === 'passWord'){
+      if(this.passWord.length <= 0 || this.passWord.length > 20){
+        this.showMsg('warning', '请注意密码长度');
+        return;
+      }
+    }
+    if(e === 'passWordConfirm'){
+      if(this.passWord !== this.passWordConfirm){
+        this.showMsg('warning', '两次输入的密码不一致');
+        return;
+      }
+    }
+    if(e === 'code'){
+      if(this.code.length !== 4){
+        this.showMsg('warning', '请注意验证码长度');
+        return;
+      }
+    }
+  }
   // 注册
   Registered() {
+    if(this.userName.length <= 0 || this.userName.length > 8){
+      this.showMsg('warning', '请注意昵称长度');
+    }
+    if(this.passWord.length <= 0 || this.passWord.length > 20){
+      this.showMsg('warning', '请注意密码长度');
+      return;
+    }
+    if(this.passWord !== this.passWordConfirm){
+      this.showMsg('warning', '两次输入的密码不一致');
+      return;
+    }
+    if(this.code.length !== 4){
+      this.showMsg('warning', '请注意验证码长度');
+      return;
+    }
     let data = {
       UserName: this.userName,
-      PassWord: this.passWord
+      PassWord: this.passWord,
+      code: this.code,
     };
     foreverHttp.get('/loginRegister/encrypt', {}, (response: any) => {// 这里拦截器已拦截，成功才会执行
       let publicPem = response.data;

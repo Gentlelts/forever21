@@ -8,21 +8,21 @@ import {ActivatedRoute, ParamMap} from '@angular/router';
 })
 export class StorySortPage implements OnInit {
   storySortList = [];
-
+  showTitle = '';
   constructor(
     private route: ActivatedRoute,
   ) {
   }
-
   getStorySortList() {
     let id = '';
     this.route.paramMap.subscribe((params: ParamMap) => {
       id = params.get('id');
+      this.showTitle = id;
     });
     let data = {
-      tag: id
+      tags: id
     };
-    foreverHttp.get('/article/tagList', data, (response: any) => {
+    foreverHttp.get('/article/list', data, (response: any) => {
       if (response.code === 200) {
         for (let i = 0; i < response.data.length; i++) {
           response.data[i].DocUrl = response.data[i].DocUrl.split(',');
