@@ -17,7 +17,7 @@ export class HeaderBannerComponent implements OnInit {
     window.localStorage.removeItem('UserID');
     window.localStorage.removeItem('UserName');
     this.router.navigate(['/']);
-    this.hasLogin = true;
+    this.hasLogin = false;
   }
   ngOnInit() {
     let UserID = window.localStorage.getItem('UserID');

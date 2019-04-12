@@ -2,7 +2,8 @@ import axios from 'axios';
 import * as qs from 'qs';
 
 axios.defaults.timeout = 5000;
-axios.defaults.baseURL = 'http://forever21.lynwhx.com/api';
+axios.defaults.baseURL = 'http://forever21.lynwhx.com';
+axios.defaults.withCredentials = true;
 // axios.defaults.baseURL = 'http://localhost:441';
 // http request 拦截器 所有的请求都会执行一次
 axios.interceptors.request.use(config => {
