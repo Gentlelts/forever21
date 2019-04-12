@@ -1,56 +1,56 @@
 {
   "/loginRegister/login": {
-    "target": "http://forever21.lynwhx.com/",
+    "target": "http://forever21.lynwhx.com/api",
     "secure":false,
     "changeOrigin": true
   },
   "/loginRegister/register": {
-    "target": "http://forever21.lynwhx.com/",
+    "target": "http://forever21.lynwhx.com/api",
     "secure":false,
     "changeOrigin": true
   },
   "/loginRegister/encrypt": {
-    "target": "http://forever21.lynwhx.com/",
+    "target": "http://forever21.lynwhx.com/api",
     "secure":false,
     "changeOrigin": true
   },
   "/article/list": {
-    "target": "http://forever21.lynwhx.com/",
+    "target": "http://forever21.lynwhx.com/api",
     "secure":false,
     "changeOrigin": true
   },
   "/article/tagList": {
-    "target": "http://forever21.lynwhx.com/",
+    "target": "http://forever21.lynwhx.com/api",
     "secure":false,
     "changeOrigin": true
   },
   "/article/uploadImg": {
-    "target": "http://forever21.lynwhx.com/",
+    "target": "http://forever21.lynwhx.com/api",
     "secure":false,
     "changeOrigin": true
   },
   "/article/publish": {
-    "target": "http://forever21.lynwhx.com/",
+    "target": "http://forever21.lynwhx.com/api",
     "secure":false,
     "changeOrigin": true
   },
   "/article/details": {
-    "target": "http://forever21.lynwhx.com/",
+    "target": "http://forever21.lynwhx.com/api",
     "secure":false,
     "changeOrigin": true
   },
   "/article/like": {
-    "target": "http://forever21.lynwhx.com/",
+    "target": "http://forever21.lynwhx.com/api",
     "secure":false,
     "changeOrigin": true
   },
   "/userInfo/information": {
-    "target": "http://forever21.lynwhx.com/",
+    "target": "http://forever21.lynwhx.com/api",
     "secure":false,
     "changeOrigin": true
   },
   "/userInfo/userArticle": {
-    "target": "http://forever21.lynwhx.com/",
+    "target": "http://forever21.lynwhx.com/api",
     "secure":false,
     "changeOrigin": true
   }
