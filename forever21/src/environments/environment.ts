@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  url:'http://forever21.lynwhx.com'
+  url:'http://forever21.lynwhx.com/api'
 };
 
 /*

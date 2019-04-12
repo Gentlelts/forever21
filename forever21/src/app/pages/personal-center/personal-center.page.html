@@ -230,7 +230,7 @@
         <div *ngIf="showArticleList" class="bg-fff p-t-10 p-b-30 cursor-pointer">
           <div class="">
             <ul class="dis-flex flex-wrap-wrap">
-              <li class="owner-article-list p-r-10 p-l-10" *ngFor="let article of ownerArticleList">
+              <li class="owner-article-list p-t-15 p-b-15 p-r-10 p-l-10" *ngFor="let article of ownerArticleList">
                 <a routerLink="storyDetail/{{article._id}}">
                   <div class="ownerArticle-img-wrap">
                     <img class="w-100 h-100 border-radius-5" [src]="article.DocUrl" alt="">
@@ -241,7 +241,7 @@
                   </div>
                 </a>
               </li>
-              <li class="owner-article-list p-r-10 p-l-10 t-a-m m-t-30" (click)="releaseStory()">
+              <li class="owner-article-list p-t-15 p-b-15 p-r-10 p-l-10 t-a-m" (click)="releaseStory()">
                 <div class="t-a-m border-radius-5 go-upload-page">
                   <i nz-icon type="plus"></i>
                   <div class="ant-upload-text">点击上传</div>

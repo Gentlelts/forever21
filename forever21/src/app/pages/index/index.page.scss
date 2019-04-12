@@ -73,6 +73,15 @@
             padding-left: 8px;
             padding-right: 8px;
             a{
+              .article-like{
+                position: absolute;
+                right: 10px;
+                top: 10px;
+                font-size: 16px;
+                color: #f73f51;
+                background: #fff;
+                border-radius: 5px;
+              }
               .discover-forever{
                 position: absolute;
                 bottom: 0;
@@ -130,6 +139,15 @@
             padding-left: 8px !important;
             padding-right: 8px !important;
             a{
+              .article-like{
+                position: absolute;
+                right: 10px;
+                top: 10px;
+                font-size: 16px;
+                color: #f73f51;
+                background: #fff;
+                border-radius: 5px;
+              }
               .story-title{
                 max-width: 333.33px;
                 overflow: hidden;

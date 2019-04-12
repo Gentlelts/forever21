@@ -35,7 +35,7 @@
       <div class="">
         <div class="current-modules">
           <div class="modules-title-wrap">
-            <div class="modules-title">探索FOREVER21</div>
+            <div class="modules-title">探索FOREVER21<i class="p-l-10" nz-icon nzType="alert" nzTheme="outline"></i></div>
           </div>
           <div class="current-modules-content">
             <ul class="dis-flex indexPage-ul-one">
@@ -79,14 +79,15 @@
       <div class="">
         <div class="current-modules">
           <div class="modules-title-wrap">
-            <div class="modules-title">最新作品</div>
+            <div class="modules-title">最新作品<i class="p-l-10" nz-icon nzType="fire" nzTheme="outline"></i></div>
           </div>
           <div class="current-modules-content">
             <ul class="dis-flex indexPage-ul-two">
               <li class="" *ngFor="let story of latestWorks">
                 <a routerLink="storyDetail/{{story._id}}">
-                  <div class="">
+                  <div class="po-si-re">
                     <img class="w-100 h-100 border-radius-5" [src]="story.DocUrl" alt="">
+                    <span *ngIf="story.Like > 0" class="article-like"><i nz-icon type="like" theme="outline"></i>{{story.Like}}</span>
                   </div>
                   <div class="p-t-5">
                     <p></p>
@@ -96,10 +97,6 @@
                       <div class="f-g-1">
                         <span class="icon iconfont icon-user story-whois-icon f-z-14 p-r-5"></span>
                         <span class="o-v-p story-whois">{{story.ArticleName}}</span>
-                      </div>
-                      <div class="f-g-1">
-                        <span class="icon iconfont icon-zuanshi1 f-z-14 p-r-5"></span>
-                        <span>{{story.Like}}</span>
                       </div>
                       <div class="f-g-1">
                         <span class="icon iconfont icon-time f-z-14 p-r-5"></span>
@@ -116,14 +113,15 @@
       <div class="">
         <div class="current-modules">
           <div class="modules-title-wrap">
-            <div class="modules-title">榜单作品</div>
+            <div class="modules-title">榜单作品<i class="p-l-10" nz-icon nzType="crown" nzTheme="outline"></i></div>
           </div>
           <div class="current-modules-content">
             <ul class="dis-flex indexPage-ul-one">
               <li class="" *ngFor="let story of rankingList">
                 <a routerLink="storyDetail/{{story._id}}">
-                  <div class="img-wrap-333">
+                  <div class="img-wrap-333 po-si-re">
                     <img class="w-100 h-100 border-radius-5" [src]="story.DocUrl" alt="">
+                    <span *ngIf="story.Like > 0" class="article-like"><i nz-icon type="like" theme="outline"></i>{{story.Like}}</span>
                   </div>
                   <div class="p-t-5">
                     <p></p>
@@ -133,10 +131,6 @@
                       <div class="f-g-1">
                         <span class="icon iconfont icon-user story-whois-icon f-z-14 p-r-5"></span>
                         <span class="o-v-p story-whois">{{story.ArticleName}}</span>
-                      </div>
-                      <div class="f-g-1">
-                        <span class="icon iconfont icon-zuanshi1 f-z-14 p-r-5"></span>
-                        <span>{{story.Like}}</span>
                       </div>
                       <div class="f-g-1">
                         <span class="icon iconfont icon-time f-z-14 p-r-5"></span>
