@@ -21,6 +21,17 @@
     </div>
     <div class="content">
       <div class="">
+        <div class="">
+          <nz-input-group [nzSuffix]="suffixIconSearch">
+            <!-- <input type="text" nz-input placeholder="输入文章关键字搜索……" /> -->
+            <input type="text" [(ngModel)]="searchWords" class="h-50 f-w-600 m-t-50 f-z-18 w-100 border-1-ccc border-radius-5" placeholder="输入文章关键字搜索……">
+          </nz-input-group>
+          <ng-template #suffixIconSearch>
+            <i class="f-z-32 m-t-50 f-w-600" nz-icon type="search"></i>
+          </ng-template>
+        </div>
+      </div>
+      <div class="">
         <div class="current-modules">
           <div class="modules-title-wrap">
             <div class="modules-title">探索FOREVER21<i class="p-l-10" nz-icon nzType="alert" nzTheme="outline"></i></div>

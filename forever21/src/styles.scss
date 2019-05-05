@@ -74,7 +74,15 @@ input {
   height: 40px;
   line-height: 40px;
 }
-
+.h-50{
+  height: 50px!important;
+}
+.m-t-50{
+  margin-top: 50px!important;
+}
+.f-z-32{
+  font-size: 32px!important;
+}
 input:focus,
 textarea:focus,
 select:focus {

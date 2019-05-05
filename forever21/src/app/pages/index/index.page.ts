@@ -25,6 +25,7 @@ export class IndexPage implements OnInit {
   Landscape = "Landscape";
   Character = "Character";
   Story = "Story";
+  searchWords = '';
   constructor() {}
   // 对数据根据点赞数排序
   static sortLikeArray(likeArray){
