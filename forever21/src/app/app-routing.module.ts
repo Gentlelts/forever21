@@ -10,6 +10,7 @@ import { PersonalCenterPage } from './pages/personal-center/personal-center.page
 import { ReleaseStoryPage } from './pages/release-story/release-story.page';
 import { StoryDetailPage } from './pages/story-detail/story-detail.page';
 import { StorySortPage } from './pages/story-sort/story-sort.page';
+import { ExperiencePage } from './pages/experience/experience.page';
 
 const routes: Routes = [
     { path: '', component: IndexPage },
@@ -27,6 +28,7 @@ const routes: Routes = [
     { path: 'storySort/Landscape/storyDetail/:id', component: StoryDetailPage },// 标签页进详情
     { path: 'storySort/Character/storyDetail/:id', component: StoryDetailPage },
     { path: 'storySort/Story/storyDetail/:id', component: StoryDetailPage },
+    { path: 'experience', component: ExperiencePage },
     // otherwise redirect to home
     { path: '**', redirectTo: '' }
   ];

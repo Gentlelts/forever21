@@ -24,10 +24,10 @@
         <div class="">
           <nz-input-group [nzSuffix]="suffixIconSearch">
             <!-- <input type="text" nz-input placeholder="输入文章关键字搜索……" /> -->
-            <input type="text" [(ngModel)]="searchWords" class="h-50 f-w-600 m-t-50 f-z-18 w-100 border-1-ccc border-radius-5" placeholder="输入文章关键字搜索……">
+            <input type="text" [(ngModel)]="keyword" class="h-50 f-w-600 m-t-50 f-z-18 w-100 border-1-ccc border-radius-5" placeholder="输入文章关键字搜索……">
           </nz-input-group>
           <ng-template #suffixIconSearch>
-            <i class="f-z-32 m-t-50 f-w-600" nz-icon type="search"></i>
+            <i class="f-z-32 m-t-50 f-w-600" nz-icon type="search" (click)="searchKeyword()"></i>
           </ng-template>
         </div>
       </div>

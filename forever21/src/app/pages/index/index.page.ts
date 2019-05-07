@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
+import {ElMessageService} from 'element-angular';
+
 import {foreverHttp} from '../../../environments/axiosHttp';
 import {environment} from "../../../environments/environment";
 
@@ -25,13 +28,23 @@ export class IndexPage implements OnInit {
   Landscape = "Landscape";
   Character = "Character";
   Story = "Story";
-  searchWords = '';
-  constructor() {}
+  keyword = '';
+  constructor(
+    private message: ElMessageService,
+    private router: Router
+  ) {}
   // 对数据根据点赞数排序
   static sortLikeArray(likeArray){
     return likeArray.sort(function(a,b) {
       return b.Like-a.Like;
     });
+  }
+  searchKeyword(){
+    if(this.keyword === ''){
+      this.showMsg('warning', '关键字不能为空~');
+    }else{
+      this.router.navigate(['/experience'],{ queryParams: { id: this.keyword } });
+    }
   }
   getStoryList(){
     let data = {
@@ -57,5 +70,10 @@ export class IndexPage implements OnInit {
   }
   ngOnInit() {
     this.getStoryList();
+  }
+
+  showMsg(type: any, msg: String) {
+    this.message.setOptions({showClose: true});
+    this.message[type](msg);
   }
 }
