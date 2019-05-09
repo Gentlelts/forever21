@@ -43,6 +43,7 @@ export class StoryDetailPage implements OnInit {
     this.route.paramMap.subscribe((params: ParamMap)=>{
       data.id = params.get('id');
     });
+    // data.id = window.localStorage.getItem('UserID');
     foreverHttp.post('/article/like',data,(response:any) =>{
       if (response.code === 200) {
         this.likeThis = true;
