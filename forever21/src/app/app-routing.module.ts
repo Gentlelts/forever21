@@ -29,6 +29,7 @@ const routes: Routes = [
     { path: 'storySort/Character/storyDetail/:id', component: StoryDetailPage },
     { path: 'storySort/Story/storyDetail/:id', component: StoryDetailPage },
     { path: 'experience', component: ExperiencePage },
+    { path: 'experience/storyDetail/:id', component: StoryDetailPage },
     // otherwise redirect to home
     { path: '**', redirectTo: '' }
   ];

@@ -12,7 +12,7 @@ export class ExperiencePage implements OnInit {
     private route: ActivatedRoute,
     ) { }
   public keyword: any;
-  public storyList: any;
+  public storyList: any=[];
   
   getKeyword() {
     this.route.queryParams.subscribe(params => {
@@ -30,7 +30,28 @@ export class ExperiencePage implements OnInit {
           response.data[i].DocUrl = response.data[i].DocUrl.split(',');
           response.data[i].DocUrl = response.data[i].DocUrl[0];
         }
-        this.storyList = response.data;
+
+        for(let j = 0; j < response.data.length; j++){
+          let ArticleName =  response.data[j].ArticleName;
+          let Content =  response.data[j].Content;
+          let Title =  response.data[j].Title;
+          if(ArticleName.indexOf(this.keyword) !== -1 || Content.indexOf(this.keyword) !== -1 || Title.indexOf(this.keyword) !== -1){
+            this.storyList.push(response.data[j]);
+          }
+        }
+// ArticleName
+// Content
+// Title
+
+// ctrl.userLists = ctrl.userLists.filter(function (v,i) {
+//   console.log(v);
+//   return v.name.indexOf(ctrl.searchVal) > -1
+// })
+        // this.storyList = response.data.filter(function (v,i){
+        //   console.log(v);
+        //   return v.name.indexOf(this.keyword) > -1
+        // });
+        this.storyList = this.storyList.reverse()
         console.log(this.storyList)
       }
     });
